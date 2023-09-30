@@ -1,0 +1,192 @@
+/* Custom Font family */
+@font-face {
+    font-family: $font-primary;
+    src: local('Proxima Nova Light'), local('Proxima-Nova-Light'),
+        url('./../fonts/proxima-nova/ProximaNova-Light/ProximaNova-Light.woff2') format('woff2'),
+        url('./../fonts/proxima-nova/ProximaNova-Light/ProximaNova-Light.woff') format('woff'),
+        url('./../fonts/proxima-nova/ProximaNova-Light/ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-primary;
+    src: local('Proxima Nova Regular'), local('Proxima-Nova-Regular'),
+        url('./../fonts/proxima-nova/ProximaNova-Regular/ProximaNova-Regular.woff2') format('woff2'),
+        url('./../fonts/proxima-nova/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'),
+        url('./../fonts/proxima-nova/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-primary;
+    src: local('Proxima Nova Semibold'), local('Proxima-Nova-Semibold'),
+        url('./../fonts/proxima-nova/ProximaNova-Semibold/ProximaNova-Semibold.woff2') format('woff2'),
+        url('./../fonts/proxima-nova/ProximaNova-Semibold/ProximaNova-Semibold.woff') format('woff'),
+        url('./../fonts/proxima-nova/ProximaNova-Semibold/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-primary;
+    src: local('Proxima Nova Bold'), local('Proxima-Nova-Bold'),
+        url('./../fonts/proxima-nova/ProximaNova-Bold/ProximaNova-Bold.woff2') format('woff2'),
+        url('./../fonts/proxima-nova/ProximaNova-Bold/ProximaNova-Bold.woff') format('woff'),
+        url('./../fonts/proxima-nova/ProximaNova-Bold/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Reset CSS */
+*,
+*::before,
+*::after
+{
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+::selection{
+	color: $color-white;
+	background: $color-primary;
+}
+
+html,
+body
+{
+	scroll-behavior: smooth;
+}
+
+html{
+	font-size: 16px;
+	text-size-adjust: none;
+}
+
+body {
+	color: $color-black;
+	font-family: $font-primary;
+	font-weight: 400;
+}
+
+a,
+button
+{
+	color: inherit;
+	font-family: inherit;
+}
+
+a,
+a:hover,
+a:focus,
+a:active
+{
+	color: currentColor;
+	text-decoration: none;
+}
+
+button,
+button:hover,
+button:focus,
+button:active
+{
+	outline: none;
+}
+
+input:-webkit-autofill{
+	-webkit-text-fill-color: unset;
+	transition: background-color 5000s;
+}
+
+img,
+svg
+{
+	display: block;
+}
+
+img{
+	object-fit: cover;
+	max-width: 100%;
+}
+
+@include min-lg {
+	.container-lg-fluid{
+		--bs-gutter-x:1.5rem;
+		--bs-gutter-y:0;
+		width:100%;
+		padding-right:calc(var(--bs-gutter-x) * .5);
+		padding-left:calc(var(--bs-gutter-x) * .5);
+		margin-right:auto;
+		margin-left:auto;
+		max-width: unset
+	}
+}
+
+
+.user-select-none{
+	pointer-events: none;
+}
+
+.list-inline{
+	font-size: 0;
+	&-item{
+		font-size: 1rem;
+	}
+}
+
+/* Common Section Gap Style */
+.section-gap{
+	padding: toRem(60) 0;
+	@include max-lg{
+		padding: toRem(50) 0;
+	}
+
+	&--fix{
+		padding-bottom: calc(toRem(60) - 30px);
+		@include max-lg{
+			padding-bottom: calc(toRem(50) - 30px);
+		}
+	}
+}
+
+/* Common Section Heading Style */
+.section-header{
+	color: $color-primary;
+	text-align: center;
+	margin-bottom: toRem(20);
+
+	&__title{
+		font-size: toRem(40);
+		@include min-lg{
+			font-size: toRem(30);
+		}
+		@include max-md{
+			font-size: toRem(26);
+		}
+		font-weight: 700;
+		margin-bottom: toRem(20);
+	}
+}
+
+.match-height > [class*="col"]{
+	display: flex;
+	flex-flow: column;
+}
+
+.match-height > [class*="col"] > *{
+	flex: 1 1 auto;
+}
+
+.text-primary{
+	--bs-primary-rgb: #{$color-primary-rgb};
+}
+
+.section-overlay{
+	position: relative;
+	isolation: isolate;
+}
+
+.text-underline{
+	text-decoration: underline;
+}

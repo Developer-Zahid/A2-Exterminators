@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Site Meta Data -->
+    <meta name="author" content="A2 Exterminators">
+    <meta name="description" content="A2 Exterminators is a Fast, Professional, and Reliable pest control company in South Carolina">
+    <meta name="keywords" content="A2 Exterminators, Exterminators, pest control, pest control company, pest control South Carolina, South Carolina, Reliable pest control, Reliable pest control South Carolina, Professional pest control, Fast pest control">
+	<!-- Site Title -->
+	<title>A2 Exterminators</title>
+	<!-- Favicon Link -->
+	<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+	<!-- All CSS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+<body>
+	<!-- Header Section -->
+	<header class="header fixed-top">
+	</header>
+
+	<!-- Banner Section -->
+	<section class="banner">
+		<div class="banner__top">
+		</div>
+		<div class="banner__bottom">
+			<a href="#!" class="btn btn-primary">request a free estimate</a>
+			<a href="#!" class="btn btn-dark">request a free estimate</a>
+		</div>
+	</section>
+
+	<!-- Feature Section -->
+	<section class="feature">
+		<div class="section-header">
+			<h1 class="section-header__title">Un accompagnement dédié, pour des travaux en toute sérénité</h1>
+			<p class="section-header__text">Nos conseillers spécialisés guident votre projet de A à Z.</p>
+		</div>
+	</section>
+
+	<!-- Service Section -->
+	<section class="service section-gap">
+	</section>
+
+	<!-- Testimonial Section -->
+	<section class="testimonial section-gap">
+	</section>
+
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xxl col-xl-3 col-lg-4 col-md-6">
+					<div class="footer__block">
+						<a href="/" class="d-inline-block">
+							<img src="./assets/images/logo/logo.png" alt="logo">
+						</a>
+						<p class="footer__text mb-0">Depuis 2015, NOVECOLOGY</p>
+						<p class="footer__text">participe à la lutte contre la précarité énergétique en tant que professionnel de l’isolation thermique des murs par l’extérieur et des panneaux photovoltaïques.</p>
+					</div>
+				</div>
+				<div class="col-xxl col-xl-3 col-lg-4 col-md-6">
+					<div class="footer__block">
+						<ul class="footer__list">
+							<li class="footer__list__item">
+								<a href="#!" class="footer__list__link">QUI SOMMES NOUS ?</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scroll To Top Button -->
+	<div class="scroll-top position-fixed">
+		<button class="scroll-top__btn border-0 d-inline-flex align-items-center justify-content-center">
+			<i class="fa-solid fa-chevron-up"></i>
+		</button>
+	</div>
+
+	<!-- All Scripts -->
+	<script src="./assets/plugins/jquery/jquery-3.7.1.min.js"></script>
+	<script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			/* Load iframe after click function end */
+			$(document).on("click", '[data-toggle="iframe"]', function(){
+				$(this).closest('[data-toggle="thumbnail"]').html(`<iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/${$(this).closest('[data-toggle="thumbnail"]').attr("data-embed-id")}?autoplay=1&enablejsapi=1&controls=1&autopause=0&muted=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" loading="lazy"></iframe>`)
+			});
+		});
+	</script>
+</body>
+</html>

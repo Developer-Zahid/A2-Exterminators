@@ -1,0 +1,63 @@
+/* Header Section Style */
+.header{
+	.navbar{
+		@include min-xl {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		&-brand__image{
+			max-height: 40px;
+		}
+
+		&-toggler{
+			font-size: 1rem;
+			color: unset;
+			z-index: 8;
+			@extend %transition;
+
+			&[aria-expanded="true"],
+			&:hover
+			{
+				color: $color-primary;
+			}
+		}
+
+		&-nav,
+		.nav-link
+		{
+			@include min-xl{
+				height: 100%;
+			}
+		}
+
+		.nav-link{
+			color: $color-black;
+			font-size: toRem(15);
+			padding: toRem(15) toRem(20);
+
+			&.active,
+			&:hover,
+			&:focus-visible
+			{
+				color: $color-white;
+				background-color: $color-primary;
+			}
+		}
+	}
+}
+
+.dropdown{
+	font-size: toRem(12);
+	&-menu{
+		--bs-dropdown-border-width: 0;
+		--bs-dropdown-border-radius: #{toRem(8)};
+		--bs-dropdown-link-active-bg: #{$color-primary};
+
+		box-shadow: 0 2px 7px rgba(0,0,0,.15);
+	}
+
+	&-item{
+		font-size: toRem(14);
+	}
+}
