@@ -1,13 +1,22 @@
 // SCSS Variable's
 
-$font-primary: 'Proxima Nova', sans-serif;
-$font-section: 'Bebas Neue', sans-serif;
-$font-primary: 'Montserrat', sans-serif;
+// $font-primary: 'Proxima Nova Rg', sans-serif;
+$font-primary-light: 'Proxima Nova Lt', sans-serif; //300
+$font-primary-regular: 'Proxima Nova Rg', sans-serif; //400
+$font-primary-semibold: 'Proxima Nova Lt', sans-serif; // 600
+$font-primary-bold: 'Proxima Nova Rg', sans-serif; // 700
+$font-secondary: 'Bebas Neue', sans-serif;
+$font-tertiary: 'Montserrat', sans-serif;
 
 
 $color-primary:#fc0706;
 $color-primary-rgb: 252, 7, 6;
 $color-primary--dark:#6d0303;
 
+$color-gray:#333333;
+$color-gray-thin:#e2e2e2;
+$color-gray-light:#666666;
 $color-black:#000000;
 $color-white:#ffffff;
+
+$gutter: 28px;

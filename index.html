@@ -21,35 +21,221 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 <body>
 	<!-- Header Section -->
-	<header class="header fixed-top">
+	<header class="header fixed-top py-5 bg-dark">
 	</header>
 
 	<!-- Banner Section -->
-	<section class="banner">
-		<div class="banner__top">
-		</div>
-		<div class="banner__bottom">
-			<a href="#!" class="btn btn-primary">request a free estimate</a>
-			<a href="#!" class="btn btn-dark">request a free estimate</a>
+	<section class="banner bg-black">
+		<video class="banner__bg user-select-none" poster="./assets/images/banner/banner.png" muted loop loading="lazy">
+			<source src="./assets/videos/banner.mp4" type="video/mp4">
+		</video>
+		<div class="container">
+			<div class="banner__content py-5">
+				<div class="banner__header text-center text-white underline underline--center">
+					<h1 class="banner__title mb-0"><span class="text-primary">A2</span> Exterminators</h1>
+					<h2 class="banner__sub-title">Trusted. Experienced. Dedicated.</h2>
+				</div>
+				<form class="text-center">
+					<div class="row justify-content-center pb-2">
+						<div class="col-xxl col-lg-4 col-md-6">
+							<div class="mb-3">
+								<input type="text" name="name" class="form-control" placeholder="Full Name">
+							</div>							  
+						</div>
+						<div class="col-xxl col-lg-4 col-md-6">
+							<div class="mb-3">
+								<input type="email" name="email" class="form-control" placeholder="Email Address" required>
+							</div>							  
+						</div>
+						<div class="col-xxl col-lg-4 col-md-6">
+							<div class="mb-3">
+								<input type="number" name="phone" class="form-control" placeholder="Phone Number" required>
+							</div>							  
+						</div>
+						<div class="col-xxl col-lg-4 col-md-6">
+							<div class="mb-3">
+								<input type="text" name="zip_code" class="form-control" placeholder="Zip Code">
+							</div>							  
+						</div>
+						<div class="col-xxl col-lg-4 col-md-6">
+							<div class="mb-3">
+								<select name="service_type" class="form-select" required>
+									<option value="" selected disabled>Service Request</option>
+									<option value="INTEGRATED PEST MANAGEMENT">INTEGRATED PEST MANAGEMENT</option>
+									<option value="TERMITE CONTROL">TERMITE CONTROL</option>
+									<option value="LICENSED & PROTECTED">LICENSED & PROTECTED</option>
+									<option value="MOISTURE CONTROL">MOISTURE CONTROL</option>
+								</select>
+							</div>							  
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Request a free estimate</button>
+				</form>
+			</div>
 		</div>
 	</section>
 
-	<!-- Feature Section -->
-	<section class="feature">
-		<div class="section-header">
-			<h1 class="section-header__title">Un accompagnement dédié, pour des travaux en toute sérénité</h1>
-			<p class="section-header__text">Nos conseillers spécialisés guident votre projet de A à Z.</p>
+	<!-- Category Section -->
+	<section class="category bg-black section-gap section-gap--fix">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="category__card">
+						<img class="category__card__image" src="./assets/images/categories/category-1.png" alt="category" height="112" loading="lazy">
+						<h1 class="category__card__title">INTEGRATED PEST MANAGEMENT</h1>
+						<p class="category__card__text">IPM is used to manage pest damage by the most economical means, and with the least possible hazard to people, property, and the environment.</p>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="category__card">
+						<img class="category__card__image" src="./assets/images/categories/category-2.png" alt="category" height="112" loading="lazy">
+						<h1 class="category__card__title">TERMITE CONTROL</h1>
+						<p class="category__card__text">We offer termite control for all different types of surfaces! Call A2 to get rid of those pesky termites!</p>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="category__card">
+						<img class="category__card__image" src="./assets/images/categories/category-3.png" alt="category" height="112" loading="lazy">
+						<h1 class="category__card__title">LICENSED & PROTECTED</h1>
+						<p class="category__card__text">A2 is licensed and insured, and your satisfaction is what we strive for!</p>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<div class="category__card">
+						<img class="category__card__image" src="./assets/images/categories/category-4.png" alt="category" height="112" loading="lazy">
+						<h1 class="category__card__title">MOISTURE CONTROL</h1>
+						<p class="category__card__text">Moisture control and mold remediation is one of the best investments you can make to protect your property and ensure costly problems don’t creep up on you.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
-
+	
 	<!-- Service Section -->
-	<section class="service section-gap">
+	<section class="service section-gap section-gap--fix">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-8 mx-auto">
+					<div class="px-xl-3 section-header section-header--center underline underline--center">
+						<h1 class="section-header__title">Our Services</h1>
+						<h2 class="section-header__sub-title">We Offer Fast, Professional, and Reliable pest control in South Carolina</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row match-height pt-4">
+				<div class="col-xl-4 col-md-6">
+					<div class="service__card">
+						<div class="service__card__head">
+							<img class="service__card__image" src="./assets/images/services/service-1.png" alt="service" height="245" loading="lazy">
+						</div>
+						<div class="service__card__body">
+							<h3 class="service__card__title">Pest Control</h3>
+							<p class="service__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum.</p>
+							<a href="#!" class="btn btn-primary">Discover More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="service__card">
+						<div class="service__card__head">
+							<img class="service__card__image" src="./assets/images/services/service-2.png" alt="service" height="245" loading="lazy">
+						</div>
+						<div class="service__card__body">
+							<h3 class="service__card__title">Fire Ant Control</h3>
+							<p class="service__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum.</p>
+							<a href="#!" class="btn btn-primary">Discover More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="service__card">
+						<div class="service__card__head">
+							<img class="service__card__image" src="./assets/images/services/service-3.png" alt="service" height="245" loading="lazy">
+						</div>
+						<div class="service__card__body">
+							<h3 class="service__card__title">Mosquito Management</h3>
+							<p class="service__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum.</p>
+							<a href="#!" class="btn btn-primary">Discover More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="service__card">
+						<div class="service__card__head">
+							<img class="service__card__image" src="./assets/images/services/service-4.png" alt="service" height="245" loading="lazy">
+						</div>
+						<div class="service__card__body">
+							<h3 class="service__card__title">Liquid termite treatments and baiting treatments</h3>
+							<p class="service__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum.</p>
+							<a href="#!" class="btn btn-primary">Discover More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="service__card">
+						<div class="service__card__head">
+							<img class="service__card__image" src="./assets/images/services/service-5.png" alt="service" height="245" loading="lazy">
+						</div>
+						<div class="service__card__body">
+							<h3 class="service__card__title">Moisture/mold/mildew control</h3>
+							<p class="service__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum.</p>
+							<a href="#!" class="btn btn-primary">Discover More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6">
+					<div class="service__card">
+						<div class="service__card__head">
+							<img class="service__card__image" src="./assets/images/services/service-6.png" alt="service" height="245" loading="lazy">
+						</div>
+						<div class="service__card__body">
+							<h3 class="service__card__title">Encapsulations</h3>
+							<p class="service__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum.</p>
+							<a href="#!" class="btn btn-primary">Discover More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Priority Section -->
+	<section class="priority bg-black section-gap overflow-hidden">
+		<img class="priority__bg user-select-none" src="./assets/images/priority/priority.png" alt="priority" loading="lazy">
+		<div class="container text-center pt-5 pb-3">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<h1 class="priority__title">The Safety of Our Customers’ Families, Homes, Businesses, and Assets Is Our Number One Priority.</h1>
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-center">
+				<div class="col-lg-auto">
+					<div class="priority__card">
+						<p class="priority__card__text text-primary">Laurens:</p>
+						<a href="tel:+8646835535" class="priority__card__link">(864) 683-5535</a>
+					</div>
+				</div>
+				<div class="col-lg-auto d-none d-lg-block">
+					<span class="vr mx-3"></span>
+				</div>
+				<div class="col-lg-auto">
+					<div class="priority__card">
+						<p class="priority__card__text text-primary">Spartanburg:</p>
+						<a href="tel:+8643081185" class="priority__card__link">(864) 308-1185</a>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<a href="#!" class="btn btn-primary">Request a free estimate</a>
+			</div>
+		</div>
 	</section>
 
 	<!-- Testimonial Section -->

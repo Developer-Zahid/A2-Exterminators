@@ -4,31 +4,6 @@ Template Name: New Novecology | Solar energy provide type website
 Version: 1.00
 ------------------
 */
-/* Custom Font family */
-@font-face {
-  font-family: "Montserrat", sans-serif;
-  src: local("Proxima Nova Light"), local("Proxima-Nova-Light"), url("./../fonts/proxima-nova/ProximaNova-Light/ProximaNova-Light.woff2") format("woff2"), url("./../fonts/proxima-nova/ProximaNova-Light/ProximaNova-Light.woff") format("woff"), url("./../fonts/proxima-nova/ProximaNova-Light/ProximaNova-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat", sans-serif;
-  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("./../fonts/proxima-nova/ProximaNova-Regular/ProximaNova-Regular.woff2") format("woff2"), url("./../fonts/proxima-nova/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("./../fonts/proxima-nova/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat", sans-serif;
-  src: local("Proxima Nova Semibold"), local("Proxima-Nova-Semibold"), url("./../fonts/proxima-nova/ProximaNova-Semibold/ProximaNova-Semibold.woff2") format("woff2"), url("./../fonts/proxima-nova/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"), url("./../fonts/proxima-nova/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat", sans-serif;
-  src: local("Proxima Nova Bold"), local("Proxima-Nova-Bold"), url("./../fonts/proxima-nova/ProximaNova-Bold/ProximaNova-Bold.woff2") format("woff2"), url("./../fonts/proxima-nova/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("./../fonts/proxima-nova/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
 /* Reset CSS */
 *,
 *::before,
@@ -61,7 +36,7 @@ html {
 
 body {
   color: #000000;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-weight: 400;
 }
 
@@ -103,16 +78,9 @@ img {
   max-width: 100%;
 }
 
-@media (min-width: 992px) {
-  .container-lg-fluid {
-    --bs-gutter-x:1.5rem;
-    --bs-gutter-y:0;
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * 0.5);
-    padding-left: calc(var(--bs-gutter-x) * 0.5);
-    margin-right: auto;
-    margin-left: auto;
-    max-width: unset;
+@media (min-width: 1400px) {
+  .container {
+    max-width: 98.75rem;
   }
 }
 .user-select-none {
@@ -128,42 +96,67 @@ img {
 
 /* Common Section Gap Style */
 .section-gap {
-  padding: 3.75rem 0;
+  padding: 5rem 0;
 }
 @media (max-width: 1199.98px) {
   .section-gap {
-    padding: 3.125rem 0;
+    padding: 3.75rem 0;
   }
 }
 .section-gap--fix {
-  padding-bottom: calc(3.75rem - 30px);
+  padding-bottom: calc(5rem - 28px);
 }
 @media (max-width: 1199.98px) {
   .section-gap--fix {
-    padding-bottom: calc(3.125rem - 30px);
+    padding-bottom: calc(3.75rem - 28px);
   }
 }
 
 /* Common Section Heading Style */
 .section-header {
-  color: #fc0706;
-  text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.875rem;
 }
 .section-header__title {
-  font-size: 2.5rem;
+  color: #fc0706;
+  font-size: 1.25rem;
+  font-family: "Proxima Nova Rg", sans-serif;
   font-weight: 700;
   margin-bottom: 1.25rem;
 }
 @media (min-width: 992px) {
   .section-header__title {
-    font-size: 1.875rem;
+    font-size: 1.375rem;
   }
 }
-@media (max-width: 991.98px) {
-  .section-header__title {
-    font-size: 1.625rem;
+.section-header__sub-title {
+  color: #333333;
+  font-size: 2.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 1;
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 1400px) {
+  .section-header__sub-title {
+    font-size: 4.125rem;
   }
+}
+.section-header--center {
+  text-align: center;
+}
+
+.underline {
+  position: relative;
+}
+.underline::after {
+  content: "";
+  display: block;
+  width: 6.5%;
+  height: 5px;
+  background-color: #fc0706;
+}
+.underline--center::after {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .match-height > [class*=col] {
@@ -188,6 +181,13 @@ img {
   text-decoration: underline;
 }
 
+.vr {
+  display: inline-block;
+  width: 2px;
+  height: 4.375rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 /* Typography Reset */
 h1, .h1,
 h2, .h2,
@@ -195,7 +195,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
 }
 
 h1, .h1 {
@@ -232,16 +232,39 @@ p {
   transition: all ease-in-out 0.25s;
 }
 
+.priority__bg, .banner__bg, .service__card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.category__card__image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner__sub-title, .banner__title, .priority__card__text, .category__card__title, .service__card__title, .btn, .section-header {
+  text-transform: uppercase;
+}
+
+.priority, .category, .banner {
+  position: relative;
+  isolation: isolate;
+}
+
 /* Common Button's Style */
 .btn {
   --bs-btn-padding-y: 0.9375rem;
   --bs-btn-padding-x: 1.5625rem;
   --bs-btn-font-size: 1rem;
-  --bs-btn-font-family: Montserrat, sans-serif;
+  --bs-btn-font-family: Proxima Nova Rg, sans-serif;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1;
   box-shadow: none !important;
-  text-transform: uppercase;
 }
 @media (min-width: 1400px) {
   .btn {
@@ -296,19 +319,23 @@ p {
   background-color: #fc0706;
 }
 
-.form-control {
-  color: #fc0706;
-  font-size: 0.875rem;
+.form-control, .form-select {
+  color: #a3a3a3;
+  font-size: 1.125rem;
+  padding: 1.375rem 1.25rem;
 }
-.form-control::-moz-placeholder {
+.form-control::-moz-placeholder, .form-select::-moz-placeholder {
   color: currentColor;
 }
-.form-control::placeholder {
+.form-control::placeholder, .form-select::placeholder {
   color: currentColor;
 }
-.form-control:focus {
-  color: #fc0706;
+.form-control:focus, .form-select:focus {
+  color: #000000;
   box-shadow: none;
+}
+.form-control option, .form-select option {
+  font-size: 0.875rem;
 }
 
 input::-webkit-outer-spin-button,
@@ -326,6 +353,86 @@ input[type=number] {
 
 select {
   cursor: pointer;
+}
+
+.service__card {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.service__card__head {
+  position: relative;
+  padding-top: 49%;
+}
+.service__card__image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.service__card__body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.875rem 2.25rem;
+  border: 1px solid #e2e2e2;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.service__card__title {
+  color: #333333;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-weight: 700;
+}
+.service__card__text {
+  color: #666666;
+  font-size: 1.125rem;
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-weight: 300;
+  margin-top: auto;
+}
+
+.category__card {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+.category__card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Proxima Nova Rg", sans-serif;
+  line-height: 1.3;
+  margin-top: 1.875rem;
+}
+.category__card__text {
+  font-size: 1.125rem;
+  font-weight: 300;
+  font-family: "Proxima Nova Lt", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.priority__card {
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+.priority__card__text, .priority__card__link {
+  font-weight: 700;
+  font-family: "Proxima Nova Rg", sans-serif;
+}
+.priority__card__text {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.priority__card__link {
+  font-size: 3.125rem;
+}
+.priority__card__link:hover, .priority__card__link:focus-visible {
+  -webkit-text-decoration: #fc0706 underline;
+          text-decoration: #fc0706 underline;
 }
 
 /* Header Section Style */
@@ -414,15 +521,62 @@ select {
 }
 
 .banner {
-  position: relative;
+  min-height: calc(var(--vh, 1vh) * 100 - var(--header-size));
+  display: flex;
+  align-items: center;
+}
+.banner__bg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+.banner__header {
+  margin-bottom: 1.875rem;
+}
+.banner__title {
+  font-size: 5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  line-height: 0.9;
+}
+@media (min-width: 768px) {
+  .banner__title {
+    font-size: 6.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  .banner__title {
+    font-size: 9.375rem;
+  }
+}
+.banner__sub-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  font-family: "Proxima Nova Lt", sans-serif;
+  margin-bottom: 1.875rem;
 }
 
-.feature__card__icon {
-  display: inline-flex;
+.category::before, .category::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(var(--_translateY, 0)) skewY(var(--_skewY, -1.2deg));
+  transform-origin: top left;
+  pointer-events: none;
 }
-.feature__card__text {
-  color: #fc0706;
-  font-weight: 300;
+.category::before {
+  --_skewY: -2deg;
+  --_translateY: 5px;
+  background-color: #fc0706;
+  height: 2.5rem;
+}
+.category::after {
+  background-color: #000000;
+  height: 3.125rem;
 }
 
 .service-card {
@@ -508,6 +662,43 @@ select {
 }
 .service-card__body__list__item {
   font-size: 0.875rem;
+}
+
+.priority {
+  color: #ffffff;
+}
+.priority::before, .priority::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3.125rem;
+  background-color: #fc0706;
+  transform: translateY(calc(85% * var(--_direction, 1))) skewY(-1deg);
+}
+.priority::before {
+  --_direction: -1;
+  top: 0;
+}
+.priority::after {
+  bottom: 0;
+}
+.priority__bg {
+  opacity: 0.5;
+  z-index: -1;
+}
+.priority__title {
+  font-size: 4.375rem;
+  font-weight: 400;
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 1;
+}
+
+.feature__card__icon {
+  display: inline-flex;
+}
+.feature__card__text {
+  color: #fc0706;
+  font-weight: 300;
 }
 
 .testimonial__card {

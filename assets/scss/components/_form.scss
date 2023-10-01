@@ -1,15 +1,22 @@
 .form{
-    &-control{
-        color: $color-primary;
-        font-size: toRem(14);
+    &-control,
+    &-select
+    {
+        color: #a3a3a3;
+        font-size: toRem(18);
+        padding: toRem(22) toRem(20);
 
         &::placeholder{
             color: currentColor;
         }
 
         &:focus{
-            color: $color-primary;
+            color: $color-black;
             box-shadow: none;
+        }
+
+        option{
+            font-size: toRem(14);
         }
     }
 }

@@ -1,3 +1,39 @@
 .banner{
-    position: relative;
+    @extend %stacking-context;
+    min-height: calc(var(--vh,1vh) * 100 - var(--header-size));
+    display: flex;
+    align-items: center;
+    
+    &__bg{
+        @extend %full-width;
+        object-fit: cover;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    &__header{
+        margin-bottom: toRem(30);
+    }
+
+    &__title{
+        font-size: toRem(80);
+        @include min-md{
+            font-size: toRem(100);
+        }
+        @include min-xl{
+            font-size: toRem(150);
+        }
+        font-family: $font-secondary;
+        font-weight: 400;
+        line-height: 0.9;
+        @extend %uppercase;
+    }
+    
+    &__sub-title{
+        font-size: toRem(30);
+        font-weight: 600;
+        font-family: $font-primary-semibold;
+        margin-bottom: toRem(30);
+        @extend %uppercase;
+    }
 }

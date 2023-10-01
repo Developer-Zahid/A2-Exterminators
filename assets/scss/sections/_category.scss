@@ -1,0 +1,28 @@
+.category{
+    @extend %stacking-context;
+
+    &::before,
+    &::after
+    {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(var(--_translateY, 0)) skewY(var(--_skewY, -1.2deg));
+        transform-origin: top left;
+        pointer-events: none;
+    }
+
+    &::before{
+        --_skewY: -2deg;
+        --_translateY: 5px;
+        background-color: $color-primary;
+        height: toRem(40);
+    }
+    &::after{
+        background-color: $color-black;
+        height: toRem(50);
+    }
+}

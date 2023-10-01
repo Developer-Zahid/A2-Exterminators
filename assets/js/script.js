@@ -4,7 +4,11 @@
 	/* Document on load functions */
 	$(window).on('load', function () {
         // preLoader();
-		headerHeightFixer();
+		// headerHeightFixer();
+    });
+	/* Document on load functions */
+	$(window).on('resize', function () {
+		fixVerticalHeight();
     });
 
 	/* Preloader init */
@@ -30,33 +34,15 @@
 	$('header').before('<div class="header-height-fix"></div>');
     function headerHeightFixer(){
     	$('.header-height-fix').css('height', $('header').innerHeight() +'px');
-    	$('body').css('--header-size', $('header').innerHeight() +'px');
+    	$('html').css('--header-size', $('header').innerHeight() +'px');
 	};
+	headerHeightFixer();
 
 
-    /*  common slider */
-    // $(".common__slider").slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 4000,
-    //     speed: 500,
-    //     arrows: true,
-    //     prevArrow: '<button class="slick__arrows slick__arrows--left border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="bi bi-chevron-left"></i></button>',
-	// 	nextArrow: '<button class="slick__arrows slick__arrows--right border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="bi bi-chevron-right"></i></button>',
-    //     dots: false,
-    //     pauseOnHover: false,
-    //     pauseOnFocus: false,
-    //     infinite: true,
-	// 	responsive: [
-	// 		{
-	// 			breakpoint: 768,
-	// 			settings: {
-	// 				arrows: false,
-	// 				dots: true
-	// 			}
-	// 		},
-	// 	]
-    // });
+    function fixVerticalHeight() {
+		var vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', vh + 'px');
+	}
+	fixVerticalHeight()
 
 })(jQuery);
