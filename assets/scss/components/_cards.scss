@@ -1,6 +1,6 @@
 .service__card{
     $_radius: 8px;
-    margin-bottom: $gutter;
+    @extend %card-gap;
     display: flex;
     flex-direction: column;
 
@@ -48,7 +48,7 @@
 .category__card{
     text-align: center;
     color: $color-white;
-    margin-bottom: $gutter;
+    @extend %card-gap;
 
     &__image{
         @include max-xl{
@@ -120,7 +120,7 @@
     }
     gap: toRem(40);
     padding-top: $gutter;
-    margin-bottom: $gutter;
+    @extend %card-gap;
     
     &__icon{
         @extend %stacking-context;
@@ -163,4 +163,45 @@
         font-family: $font-primary-light;
         margin-bottom: 0;
     }
+}
+
+.team__card{
+    @extend %card-gap;
+
+    &__figure{
+        position: relative;
+        padding-top: 131%;
+
+        &__image{
+            @extend %full-width;
+        }
+    }
+
+    &__body{
+        position: relative;
+        padding: toRem(35) toRem(10) toRem(25);
+        border-bottom: 7px solid $color-primary;
+        margin-top: toRem(-60);
+        margin-left: toRem(22);
+        margin-right: toRem(22);
+        box-shadow: 0 0 toRem(20) rgba($color-black, $alpha: 0.1);
+    }
+
+    &__title{
+        color: $color-gray;
+        font-size: toRem(30);
+        font-weight: 700;
+        font-family: $font-primary-bold;
+    }
+
+    &__text{
+        color: $color-gray;
+        font-size: toRem(20);
+        font-weight: 400;
+        font-family: $font-primary-regular;
+    }
+}
+
+.gallery__card{
+    @extend %card-gap;
 }

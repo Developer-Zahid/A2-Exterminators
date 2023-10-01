@@ -1,9 +1,10 @@
 /* 
 ------------------
-Template Name: New Novecology | Solar energy provide type website
+Template Name: A2 Exterminators | Pest control company website
 Version: 1.00
 ------------------
 */
+
 @import "./abstracts/function";
 @import "./abstracts/variable";
 @import "./abstracts/mixin";
@@ -13,13 +14,14 @@ Version: 1.00
 @import "./components/buttons";
 @import "./components/form";
 @import "./components/cards";
+@import "./components/carousel";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./sections/banner";
 @import "./sections/category";
 @import "./sections/service";
 @import "./sections/priority";
+@import "./sections/about";
 @import "./sections/map";
 @import "./sections/quote";
-@import "./sections/gallery";
 @import "./sections/testimonial";

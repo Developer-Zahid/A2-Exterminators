@@ -1,4 +1,4 @@
-.gallery{
+.common{
     &__carousel{
         .carousel{
             &-control{
@@ -77,8 +77,5 @@
                 }
             }
         }
-    }
-    &__slide{
-        margin-bottom: $gutter;
     }
 }

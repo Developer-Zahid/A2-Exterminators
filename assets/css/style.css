@@ -1,6 +1,6 @@
 /* 
 ------------------
-Template Name: New Novecology | Solar energy provide type website
+Template Name: A2 Exterminators | Pest control company website
 Version: 1.00
 ------------------
 */
@@ -225,11 +225,11 @@ p {
 }
 
 /* Common Transition Style */
-.gallery__carousel .carousel-control-prev, .gallery__carousel .carousel-control-next, .footer__copyright__link, .header .navbar .nav-link::after, .header .navbar-toggler, .header__top__card__link {
+.footer__copyright__link, .header .navbar .nav-link::after, .header .navbar-toggler, .header__top__card__link, .common__carousel .carousel-control-prev, .common__carousel .carousel-control-next {
   transition: all ease-in-out 0.25s;
 }
 
-.map__bg, .priority__bg, .banner__bg, .service__card__image {
+.map__bg, .priority__bg, .banner__bg, .team__card__figure__image, .service__card__image {
   position: absolute;
   top: 0;
   right: 0;
@@ -256,6 +256,10 @@ p {
 .priority::before, .priority::after, .category::before, .category::after, .feature__card__icon::before {
   content: "";
   position: absolute;
+}
+
+.gallery__card, .team__card, .feature__card, .category__card, .service__card {
+  margin-bottom: 28px;
 }
 
 /* Common Button's Style */
@@ -362,7 +366,6 @@ select {
 }
 
 .service__card {
-  margin-bottom: 28px;
   display: flex;
   flex-direction: column;
 }
@@ -403,7 +406,6 @@ select {
 .category__card {
   text-align: center;
   color: #ffffff;
-  margin-bottom: 28px;
 }
 @media (max-width: 1399.98px) {
   .category__card__image {
@@ -465,7 +467,6 @@ select {
   align-items: center;
   gap: 2.5rem;
   padding-top: 28px;
-  margin-bottom: 28px;
 }
 @media (max-width: 767.98px) {
   .feature__card {
@@ -511,6 +512,95 @@ select {
   .feature__card__text {
     font-size: 1.125rem;
   }
+}
+
+.team__card__figure {
+  position: relative;
+  padding-top: 131%;
+}
+.team__card__body {
+  position: relative;
+  padding: 2.1875rem 0.625rem 1.5625rem;
+  border-bottom: 7px solid #fc0706;
+  margin-top: -3.75rem;
+  margin-left: 1.375rem;
+  margin-right: 1.375rem;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1);
+}
+.team__card__title {
+  color: #333333;
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: "Proxima Nova Rg", sans-serif;
+}
+.team__card__text {
+  color: #333333;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Proxima Nova Rg", sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .common__carousel .carousel-control-prev {
+    transform: translateX(calc(-100% - 28px));
+  }
+}
+@media (min-width: 1200px) {
+  .common__carousel .carousel-control-next {
+    transform: translateX(calc(100% + 28px));
+  }
+}
+.common__carousel .carousel-control-prev, .common__carousel .carousel-control-next {
+  display: inline-flex;
+  width: 3.125rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  background-color: #fc0706;
+  opacity: 1;
+}
+@media (min-width: 1400px) {
+  .common__carousel .carousel-control-prev, .common__carousel .carousel-control-next {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .common__carousel .carousel-control-prev, .common__carousel .carousel-control-next {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+@media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
+  .common__carousel .carousel-control-prev, .common__carousel .carousel-control-next {
+    position: unset;
+    transform: translateX(0);
+  }
+}
+.common__carousel .carousel-control-prev:hover, .common__carousel .carousel-control-prev:focus-visible, .common__carousel .carousel-control-next:hover, .common__carousel .carousel-control-next:focus-visible {
+  background-color: #000000;
+}
+@media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
+  .common__carousel .carousel-control-wrapper {
+    padding-bottom: 28px;
+  }
+}
+.common__carousel .carousel-indicators {
+  position: unset;
+}
+.common__carousel .carousel-indicators__dot {
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border-radius: 10rem;
+  background-color: #7f7f7f;
+  border: 0;
+  opacity: 1;
+}
+.common__carousel .carousel-indicators__dot:hover, .common__carousel .carousel-indicators__dot:focus-visible {
+  background-color: #000000;
+}
+.common__carousel .carousel-indicators__dot.active {
+  background-color: #fc0706;
 }
 
 /* Header Section Style */
@@ -856,6 +946,23 @@ select {
   }
 }
 
+.about__text {
+  font-size: 1.125rem;
+  color: #666666;
+  font-weight: 300;
+  font-family: "Proxima Nova Lt", sans-serif;
+}
+.about__list__item {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-top: 1.5625rem;
+}
+.about__list__item__icon {
+  flex-shrink: 0;
+  margin-right: 0.9375rem;
+}
+
 .map__bg {
   opacity: 0.2;
   z-index: -1;
@@ -892,72 +999,6 @@ select {
   .quote__text {
     font-size: 1.875rem;
   }
-}
-
-@media (min-width: 1200px) {
-  .gallery__carousel .carousel-control-prev {
-    transform: translateX(calc(-100% - 28px));
-  }
-}
-@media (min-width: 1200px) {
-  .gallery__carousel .carousel-control-next {
-    transform: translateX(calc(100% + 28px));
-  }
-}
-.gallery__carousel .carousel-control-prev, .gallery__carousel .carousel-control-next {
-  display: inline-flex;
-  width: 3.125rem;
-  height: 3.125rem;
-  font-size: 1.25rem;
-  background-color: #fc0706;
-  opacity: 1;
-}
-@media (min-width: 1400px) {
-  .gallery__carousel .carousel-control-prev, .gallery__carousel .carousel-control-next {
-    width: 4.5rem;
-    height: 4.5rem;
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 1200px) {
-  .gallery__carousel .carousel-control-prev, .gallery__carousel .carousel-control-next {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-}
-@media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
-  .gallery__carousel .carousel-control-prev, .gallery__carousel .carousel-control-next {
-    position: unset;
-    transform: translateX(0);
-  }
-}
-.gallery__carousel .carousel-control-prev:hover, .gallery__carousel .carousel-control-prev:focus-visible, .gallery__carousel .carousel-control-next:hover, .gallery__carousel .carousel-control-next:focus-visible {
-  background-color: #000000;
-}
-@media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
-  .gallery__carousel .carousel-control-wrapper {
-    padding-bottom: 28px;
-  }
-}
-.gallery__carousel .carousel-indicators {
-  position: unset;
-}
-.gallery__carousel .carousel-indicators__dot {
-  width: 0.8125rem;
-  height: 0.8125rem;
-  border-radius: 10rem;
-  background-color: #7f7f7f;
-  border: 0;
-  opacity: 1;
-}
-.gallery__carousel .carousel-indicators__dot:hover, .gallery__carousel .carousel-indicators__dot:focus-visible {
-  background-color: #000000;
-}
-.gallery__carousel .carousel-indicators__dot.active {
-  background-color: #fc0706;
-}
-.gallery__slide {
-  margin-bottom: 28px;
 }
 
 .testimonial__card {

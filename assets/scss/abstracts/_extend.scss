@@ -31,3 +31,7 @@
     content: '';
     position: absolute;
 }
+
+%card-gap{
+    margin-bottom: $gutter;
+}
