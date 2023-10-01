@@ -517,6 +517,7 @@ select {
 .team__card__figure {
   position: relative;
   padding-top: 131%;
+  background-color: #000000;
 }
 .team__card__body {
   position: relative;

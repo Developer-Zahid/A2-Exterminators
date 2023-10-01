@@ -171,6 +171,7 @@
     &__figure{
         position: relative;
         padding-top: 131%;
+        background-color: $color-black;
 
         &__image{
             @extend %full-width;
