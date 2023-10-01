@@ -8,6 +8,7 @@
     });
 	/* Document on load functions */
 	$(window).on('resize', function () {
+		headerHeightFixer();
 		fixVerticalHeight();
     });
 

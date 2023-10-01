@@ -5,8 +5,7 @@
     &::before,
     &::after
     {
-        content: '';
-        position: absolute;
+        @extend %common-pseudo;
         width: 100%;
         height: toRem(50);
         background-color: $color-primary;
@@ -29,7 +28,10 @@
     }
 
     &__title{
-        font-size: toRem(70);
+        font-size: toRem(50);
+        @include min-xxl{
+            font-size: toRem(70);
+        }
         font-weight: 400;
         font-family: $font-secondary;
         line-height: 1;

@@ -153,6 +153,7 @@ img{
 		content: '';
 		display: block;
 		width: 6.5%;
+		max-width: toRem(70);
 		height: 5px;
 		background-color: $color-primary;
 	}
@@ -174,17 +175,10 @@ img{
 	flex: 1 1 auto;
 }
 
-.text-primary{
+.text-primary,
+.bg-primary
+{
 	--bs-primary-rgb: #{$color-primary-rgb};
-}
-
-.section-overlay{
-	position: relative;
-	isolation: isolate;
-}
-
-.text-underline{
-	text-decoration: underline;
 }
 
 .vr{
@@ -192,4 +186,8 @@ img{
 	width: 2px;
 	height: toRem(70);
 	background-color: rgba($color-white, $alpha: 0.8);
+}
+
+.fw-bold{
+	font-family: $font-primary-bold;
 }

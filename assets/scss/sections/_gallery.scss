@@ -1,0 +1,84 @@
+.gallery{
+    &__carousel{
+        .carousel{
+            &-control{
+                &-prev{
+                    @include min-xl{
+                        transform: translateX(calc(-100% - #{$gutter}));
+                    }
+                }
+
+                &-next{
+                    @include min-xl{
+                        transform: translateX(calc(100% + #{$gutter}));
+                    }
+                }
+
+                &-prev,
+                &-next
+                {
+                    display: inline-flex;
+                    width: toRem(50);
+                    height: toRem(50);
+                    font-size: toRem(20);
+                    @include min-xxl{
+                        width: toRem(72);
+                        height: toRem(72);
+                        font-size: toRem(24);
+                    }
+                    @include min-xl{
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                    background-color: $color-primary;
+                    opacity: 1;
+                    @extend %transition;
+        
+        
+                    @media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
+                        position: unset;
+                        transform: translateX(0);
+                    }
+        
+                    &:hover,
+                    &:focus-visible
+                    {
+                        background-color: $color-black;
+                    }
+                }
+
+                &-wrapper{
+                    @media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
+                        padding-bottom: $gutter;
+                    }
+                }
+            }
+            &-indicators{
+                position: unset;
+
+                &__dot{
+                    width: toRem(13);
+                    height: toRem(13);
+                    border-radius: 10rem;
+                    background-color: #7f7f7f;
+                    border: 0;
+                    opacity: 1;
+
+                    &:hover,
+                    &:focus-visible
+                    {
+                        background-color: $color-black;
+                    }
+
+                    &.active{
+                        background-color: $color-primary;
+                    }
+                    
+                }
+            }
+        }
+    }
+    &__slide{
+        margin-bottom: $gutter;
+    }
+}

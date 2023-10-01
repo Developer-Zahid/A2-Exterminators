@@ -10,7 +10,7 @@ $font-tertiary: 'Montserrat', sans-serif;
 
 
 $color-primary:#fc0706;
-$color-primary-rgb: 252, 7, 6;
+$color-primary-rgb: toRGB($color-primary);
 $color-primary--dark:#6d0303;
 
 $color-gray:#333333;

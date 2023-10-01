@@ -4,9 +4,9 @@ Template Name: New Novecology | Solar energy provide type website
 Version: 1.00
 ------------------
 */
+@import "./abstracts/function";
 @import "./abstracts/variable";
 @import "./abstracts/mixin";
-@import "./abstracts/function";
 @import "./base/common";
 @import "./base/typography";
 @import "./abstracts/extend";
@@ -19,5 +19,7 @@ Version: 1.00
 @import "./sections/category";
 @import "./sections/service";
 @import "./sections/priority";
-@import "./sections/feature";
+@import "./sections/map";
+@import "./sections/quote";
+@import "./sections/gallery";
 @import "./sections/testimonial";

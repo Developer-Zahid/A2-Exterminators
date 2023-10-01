@@ -1,0 +1,21 @@
+.quote{
+    &__title{
+        font-size: toRem(50);
+        @include min-xxl{
+            font-size: toRem(70);
+        }
+        font-weight: 400;
+        font-family: $font-secondary;
+        line-height: 1;
+        @extend %uppercase;
+    }
+
+    &__text{
+        font-size: toRem(20);
+        @include min-xxl{
+            font-size: toRem(30);
+        }
+        font-weight: 600;
+        font-family: $font-primary-semibold;
+    }
+}

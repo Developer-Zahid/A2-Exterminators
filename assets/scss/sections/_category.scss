@@ -4,8 +4,7 @@
     &::before,
     &::after
     {
-        content: '';
-        position: absolute;
+        @extend %common-pseudo;
         z-index: -1;
         top: 0;
         left: 0;

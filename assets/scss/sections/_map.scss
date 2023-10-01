@@ -1,0 +1,19 @@
+.map{
+    @extend %stacking-context;
+
+    &__bg{
+        opacity: 0.2;
+        @extend %full-width;
+        z-index: -1;
+    }
+
+    &__text{
+        font-size: toRem(24);
+        @include min-xxl{
+            font-size: toRem(36);
+        }
+        line-height: 1.39;
+        font-weight: 300;
+        font-family: $font-primary-light;
+    }
+}

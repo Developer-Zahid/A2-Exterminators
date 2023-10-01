@@ -51,6 +51,10 @@
     margin-bottom: $gutter;
 
     &__image{
+        @include max-xl{
+            max-height: 80px;
+        }
+        
         @extend %block-center;
     }
 
@@ -64,7 +68,9 @@
     }
 
     &__text{
-        font-size: toRem(18);
+        @include min-xxl{
+            font-size: toRem(18);
+        }
         font-weight: 300;
         font-family: $font-primary-light;
         line-height: 1.4;
@@ -83,18 +89,78 @@
         font-family: $font-primary-bold;
     }
     &__text{
-        font-size: toRem(24);
+        font-size: toRem(20);
+        @include min-xxl{
+            font-size: toRem(24);
+        }
         margin-bottom: 0;
         line-height: 1;
         @extend %uppercase;
     }
     &__link{
-        font-size: toRem(50);
+        font-size: toRem(35);
+        @include min-xxl{
+            font-size: toRem(50);
+        }
 
         &:hover,
         &:focus-visible
         {
             text-decoration: $color-primary underline;
         }
+    }
+}
+
+.feature__card{
+    display: flex;
+    align-items: center;
+    @include max-sm{
+        flex-direction: column;
+        text-align: center;
+    }
+    gap: toRem(40);
+    padding-top: $gutter;
+    margin-bottom: $gutter;
+    
+    &__icon{
+        @extend %stacking-context;
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: toRem(105);
+        height: toRem(105);
+        
+        &::before{
+            @extend %common-pseudo;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background-color: $color-primary;
+            transform: skewX(-14deg);
+        }
+
+        &__image{
+            height: auto;
+        }
+    }
+
+    &__title{
+        color: $color-black;
+        @include min-xxl{
+            font-size: toRem(26);
+        }
+        font-weight: 700;
+        font-family: $font-primary-bold;
+    }
+
+    &__text{
+        color: $color-gray;
+        @include min-xxl{
+            font-size: toRem(18);
+        }
+        font-weight: 300;
+        font-family: $font-primary-light;
+        margin-bottom: 0;
     }
 }

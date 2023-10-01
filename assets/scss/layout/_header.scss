@@ -1,26 +1,92 @@
 /* Header Section Style */
 .header{
+	&__top{
+		@include max-lg{
+			display: none;
+		}
+		&__card{
+			display: flex;
+			align-items: center;
+			font-size: toRem(14);
+			padding: toRem(10) toRem(15);
+			@include min-xxl{
+				font-size: toRem(18);
+				padding: toRem(15);
+			}
+
+			&--primary{
+				padding-right: toRem(35);
+
+				@extend %stacking-context;
+				
+				@include min-xl{
+					&::before{
+						content: '';
+						position: absolute;
+						z-index: -1;
+						inset: 0;
+						background-color: $color-primary;
+						transform: skewX(25deg);
+						transform-origin: bottom right;
+					}
+				}
+
+				.header__top__card__link:hover,
+				.header__top__card__link:focus-visible
+				{
+					color: $color-black;
+				}
+			}
+
+			&--dark{
+				box-shadow: toRem(-70) 0 0 $color-black;
+
+				.header__top__card__link:hover,
+				.header__top__card__link:focus-visible
+				{
+					color: $color-primary;
+				}
+			}
+
+			&__text{
+				font-size: inherit;
+			}
+
+			&__link{
+				@extend %transition;
+			}
+		}
+	}
+
 	.navbar{
-		@include min-xl {
-			padding-top: 0;
-			padding-bottom: 0;
+		@include min-xxl{
+			--bs-navbar-padding-y: #{toRem(20)};
 		}
 
 		&-brand__image{
-			max-height: 40px;
+			max-height: toRem(65);
+
+			@media (min-width: 1600px) {
+				transform: scale(1.8);
+				transform-origin: bottom left;
+			}
 		}
 
 		&-toggler{
-			font-size: 1rem;
-			color: unset;
-			z-index: 8;
+			--bs-navbar-toggler-padding-x: 5px;
+			--bs-navbar-toggler-padding-y: 5px;
+			--bs-navbar-toggler-border-radius: 0;
+			--bs-navbar-toggler-font-size: #{toRem(20)};
+			width: toRem(40);
+			height: toRem(40);
+			color: $color-gray;
 			@extend %transition;
+		}
 
-			&[aria-expanded="true"],
-			&:hover
-			{
-				color: $color-primary;
-			}
+		&-nav{
+			--bs-nav-link-font-weight: 400;
+			--bs-nav-link-color: #{$color-gray};
+			--bs-nav-link-hover-color: #{$color-primary};
 		}
 
 		&-nav,
@@ -32,18 +98,43 @@
 		}
 
 		.nav-link{
-			color: $color-black;
-			font-size: toRem(15);
-			padding: toRem(15) toRem(20);
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: toRem(20);
+			font-weight: 400;
+			font-family: $font-primary-regular;
+			padding: toRem(10) toRem(20);
+			
+			&::after{
+				content: attr(data-text);
+				position: absolute;
+				font-weight: 700;
+				font-family: $font-primary-bold;
+				opacity: 0;
+				@extend %transition;
+			}
 
-			&.active,
-			&:hover,
-			&:focus-visible
-			{
-				color: $color-white;
-				background-color: $color-primary;
+			&.active{
+				color: transparent;
+
+				&::after{
+					color: $color-gray;
+					opacity: 1;
+				}
+			}
+
+			&:focus-visible{
+				color: $color-primary;
+				box-shadow: none;
 			}
 		}
+	}
+
+	.offcanvas__close{
+		line-height: 0;
+		padding: toRem(12) toRem(14);
 	}
 }
 

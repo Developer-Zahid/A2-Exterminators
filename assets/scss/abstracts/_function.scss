@@ -6,3 +6,7 @@
     $remValue: calc($value / 16) + em;
     @return $remValue;
 }
+@function toRGB($color) {
+    $rgbValue: red($color) + ", " + green($color) + ", " + blue($color);
+    @return $rgbValue;
+}

@@ -26,13 +26,70 @@
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#headerNavbarNav">
 	<!-- Header Section -->
-	<header class="header fixed-top py-5 bg-dark">
+	<header class="header bg-white fixed-top">
+		<div class="header__top">
+			<div class="container-fluid gx-0">
+				<div class="row justify-content-end">
+					<div class="col-xl-auto">
+						<div class="header__top__card header__top__card--primary text-white">
+							<i class="fa-solid fa-location-dot me-2"></i>
+							<p class="header__top__card__text mb-0"><strong class="fw-bold">Laurens:</strong> 239 Hillcrest Drive, Laurens, SC 29360 | <a href="tel:+8646835535" class="header__top__card__link fw-bold">(864) 683-5535</a></p>
+						</div>
+					</div>
+					<div class="col-xl-auto">
+						<div class="header__top__card header__top__card--dark bg-black">
+							<i class="fa-solid fa-location-dot text-primary me-2"></i>
+							<p class="header__top__card__text text-white mb-0"><strong class="fw-bold">Spartanburg:</strong> 2375 East Main Street, Suite A203, Spartanburg, SC 29307 | <a href="tel:+8643081185" class="header__top__card__link fw-bold">(864) 308-1185</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-xl">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/">
+					<img class="navbar-brand__image" src="./assets/images/logo/logo.png" alt="logo">
+				</a>
+				<button class="navbar-toggler shadow-none border-0 bg-primary text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<i class="fa-solid fa-bars"></i>
+				</button>			  
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+					  <span>&#32;</span>
+					  <button type="button" class="offcanvas__close bg-black text-white border-0" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+					</div>
+					<div class="offcanvas-body align-items-center">
+						<ul class="navbar-nav ms-auto" id="headerNavbarNav">
+							<li class="nav-item">
+								<a href="#banner" class="nav-link active" aria-current="page" data-text="Home">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="#about" class="nav-link" data-text="About us">About us</a>
+							</li>
+							<li class="nav-item">
+								<a href="#services" class="nav-link" data-text="Services">Services</a>
+							</li>
+							<li class="nav-item">
+								<a href="#serviceAreas" class="nav-link" data-text="Service Areas">Service Areas</a>
+							</li>
+							<li class="nav-item">
+								<a href="#gallery" class="nav-link" data-text="Gallery">Gallery</a>
+							</li>
+							<li class="nav-item">
+								<a href="#contact" class="nav-link" data-text="Contact us">Contact us</a>
+							</li>
+						</ul>
+						<a href="#!" class="btn btn-primary d-block">Request a free estimate</a>
+					</div>
+				</div>			  
+			</div>
+		</nav>
 	</header>
 
 	<!-- Banner Section -->
-	<section class="banner bg-black">
+	<section id="banner" class="banner bg-black">
 		<video class="banner__bg user-select-none" poster="./assets/images/banner/banner.png" muted loop loading="lazy">
 			<source src="./assets/videos/banner.mp4" type="video/mp4">
 		</video>
@@ -44,27 +101,27 @@
 				</div>
 				<form class="text-center">
 					<div class="row justify-content-center pb-2">
-						<div class="col-xxl col-lg-4 col-md-6">
+						<div class="col-xxl col-lg-3 col-md-6">
 							<div class="mb-3">
 								<input type="text" name="name" class="form-control" placeholder="Full Name">
 							</div>							  
 						</div>
-						<div class="col-xxl col-lg-4 col-md-6">
+						<div class="col-xxl col-lg-3 col-md-6">
 							<div class="mb-3">
 								<input type="email" name="email" class="form-control" placeholder="Email Address" required>
 							</div>							  
 						</div>
-						<div class="col-xxl col-lg-4 col-md-6">
+						<div class="col-xxl col-lg-3 col-md-6">
 							<div class="mb-3">
 								<input type="number" name="phone" class="form-control" placeholder="Phone Number" required>
 							</div>							  
 						</div>
-						<div class="col-xxl col-lg-4 col-md-6">
+						<div class="col-xxl col-lg-3 col-md-6">
 							<div class="mb-3">
 								<input type="text" name="zip_code" class="form-control" placeholder="Zip Code">
 							</div>							  
 						</div>
-						<div class="col-xxl col-lg-4 col-md-6">
+						<div class="col-xxl col-md-6">
 							<div class="mb-3">
 								<select name="service_type" class="form-select" required>
 									<option value="" selected disabled>Service Request</option>
@@ -119,7 +176,7 @@
 	</section>
 	
 	<!-- Service Section -->
-	<section class="service section-gap section-gap--fix">
+	<section id="services" class="service section-gap section-gap--fix">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-8 mx-auto">
@@ -242,8 +299,233 @@
 	<section class="testimonial section-gap">
 	</section>
 
+	<!-- Feature Section -->
+	<section class="feature section-gap section-gap--fix">
+		<div class="container">
+			<div class="section-header section-header--center underline underline--center">
+				<h1 class="section-header__title">Why choose us</h1>
+				<h2 class="section-header__sub-title">Lorem ipsum dolor sit amet</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="feature__card">
+						<div class="feature__card__icon">
+							<img class="feature__card__icon__image" src="./assets/images/feature/feature-1.png" alt="feature" height="74" loading="lazy">
+						</div>
+						<div class="feature__card__body">
+							<h3 class="feature__card__title">Pest Free Home</h3>
+							<p class="feature__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="feature__card">
+						<div class="feature__card__icon">
+							<img class="feature__card__icon__image" src="./assets/images/feature/feature-2.png" alt="feature" height="74" loading="lazy">
+						</div>
+						<div class="feature__card__body">
+							<h3 class="feature__card__title">Mosquito Free Yard</h3>
+							<p class="feature__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="feature__card">
+						<div class="feature__card__icon">
+							<img class="feature__card__icon__image" src="./assets/images/feature/feature-3.png" alt="feature" height="74" loading="lazy">
+						</div>
+						<div class="feature__card__body">
+							<h3 class="feature__card__title">Fire ant free yard</h3>
+							<p class="feature__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="feature__card">
+						<div class="feature__card__icon">
+							<img class="feature__card__icon__image" src="./assets/images/feature/feature-4.png" alt="feature" height="74" loading="lazy">
+						</div>
+						<div class="feature__card__body">
+							<h3 class="feature__card__title">Termite bonds</h3>
+							<p class="feature__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="feature__card">
+						<div class="feature__card__icon">
+							<img class="feature__card__icon__image" src="./assets/images/feature/feature-5.png" alt="feature" height="74" loading="lazy">
+						</div>
+						<div class="feature__card__body">
+							<h3 class="feature__card__title">Moisture control</h3>
+							<p class="feature__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="feature__card">
+						<div class="feature__card__icon">
+							<img class="feature__card__icon__image" src="./assets/images/feature/feature-6.png" alt="feature" height="74" loading="lazy">
+						</div>
+						<div class="feature__card__body">
+							<h3 class="feature__card__title">Payment bundles</h3>
+							<p class="feature__card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Client Section -->
+	<section class="client py-5 border-top">
+		<div class="container">
+			<img class="user-select-none" src="./assets/images/clients/client.png" alt="clients" loading="lazy">
+		</div>
+	</section>
+
+	<!-- Map Section -->
+	<section id="serviceAreas" class="map bg-black section-gap">
+		<img class="map__bg user-select-none" src="./assets/images/map/banner.png" alt="banner" loading="lazy">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-6 mb-5 mb-xl-0">
+					<img class="mx-auto user-select-none" src="./assets/images/map/map.png" alt="map" loading="lazy">
+				</div>
+				<div class="col-xl-5 text-center text-white">
+					<div class="section-header section-header--center underline underline--center">
+						<h1 class="section-header__title">SERVICE AREAS</h1>
+						<h2 class="section-header__sub-title text-white">As a Locally Owned Company, We Offer Honest Work, At Highly Competitive Rates!</h2>
+					</div>
+					<p class="map__text px-5">We are proud to serve both the <strong class="fw-bold">Upstate</strong> and the <strong class="fw-bold">Midlands</strong> South Carolina</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Quote Section -->
+	<section class="quote bg-primary section-gap">
+		<div class="container">
+			<div class="row align-items-center text-center">
+				<div class="col-xl text-white text-xl-start">
+					<h1 class="quote__title">Lorem ipsum dolor sit amet</h1>
+					<p class="quote__text mb-xl-0">Consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum.</p>
+				</div>
+				<div class="col-xl-auto text-xl-end">
+					<a href="#!" class="btn btn-dark">Request a free estimate</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Gallery Section -->
+	<section id="gallery" class="gallery section-gap">
+		<div class="container">
+			<div class="section-header section-header--center underline underline--center">
+				<h1 class="section-header__title">GALLERY</h1>
+				<h2 class="section-header__sub-title">Check Out Some of Our Latest Projects</h2>
+			</div>
+			<div id="carouselGallery" class="gallery__carousel carousel slide" data-bs-ride="carousel">
+				<div class="carousel-control-wrapper text-end">
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+						<i class="fa-solid fa-arrow-left-long" aria-hidden="true"></i>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+						<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row">
+							<div class="col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-1.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-2.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-3.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-4.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-5.png" alt="gallery" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-1.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-2.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-3.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-4.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-5.png" alt="gallery" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-1.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-2.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-3.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-4.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-5.png" alt="gallery" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-1.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-2.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-3.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 col-md-6 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-4.png" alt="gallery" loading="lazy">
+							</div>
+							<div class="col-lg-4 gallery__slide">
+								<img class="w-100" src="./assets/images/gallerys/gallery-5.png" alt="gallery" loading="lazy">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-indicators mt-1 mb-0 mx-auto">
+					<button type="button" class="carousel-indicators__dot active" data-bs-target="#carouselGallery" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" class="carousel-indicators__dot" data-bs-target="#carouselGallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" class="carousel-indicators__dot" data-bs-target="#carouselGallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" class="carousel-indicators__dot" data-bs-target="#carouselGallery" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Footer Section -->
-	<footer class="footer">
+	<footer id="contact" class="footer">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xxl col-xl-3 col-lg-4 col-md-6">

@@ -26,3 +26,8 @@
     position: relative;
     isolation: isolate;
 }
+
+%common-pseudo{
+    content: '';
+    position: absolute;
+}

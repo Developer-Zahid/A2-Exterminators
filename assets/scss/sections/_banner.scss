@@ -16,11 +16,11 @@
     }
 
     &__title{
-        font-size: toRem(80);
+        font-size: toRem(60);
         @include min-md{
-            font-size: toRem(100);
+            font-size: toRem(80);
         }
-        @include min-xl{
+        @include min-xxl{
             font-size: toRem(150);
         }
         font-family: $font-secondary;
@@ -30,7 +30,10 @@
     }
     
     &__sub-title{
-        font-size: toRem(30);
+        font-size: toRem(20);
+        @include min-lg{
+            font-size: toRem(30);
+        }
         font-weight: 600;
         font-family: $font-primary-semibold;
         margin-bottom: toRem(30);

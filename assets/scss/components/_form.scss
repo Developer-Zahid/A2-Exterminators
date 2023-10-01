@@ -3,8 +3,11 @@
     &-select
     {
         color: #a3a3a3;
-        font-size: toRem(18);
-        padding: toRem(22) toRem(20);
+
+        @include min-xxl{
+            font-size: toRem(18);
+            padding: toRem(22) toRem(20);
+        }
 
         &::placeholder{
             color: currentColor;
