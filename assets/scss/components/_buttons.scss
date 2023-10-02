@@ -5,9 +5,9 @@
 	--bs-btn-font-size: #{toRem(16)};
 
 	@include min-xxl{
-		--bs-btn-padding-y: #{toRem(28)};
-		--bs-btn-padding-x: #{toRem(43)};
-		--bs-btn-font-size: #{toRem(20)};
+		--bs-btn-padding-y: #{toRem(20)};
+		--bs-btn-padding-x: #{toRem(30)};
+		--bs-btn-font-size: #{toRem(18)};
 	}
 
 

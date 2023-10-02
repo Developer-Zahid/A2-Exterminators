@@ -22,9 +22,9 @@
                     height: toRem(50);
                     font-size: toRem(20);
                     @include min-xxl{
-                        width: toRem(72);
-                        height: toRem(72);
-                        font-size: toRem(24);
+                        width: toRem(60);
+                        height: toRem(60);
+                        font-size: toRem(22);
                     }
                     @include min-xl{
                         margin-top: auto;

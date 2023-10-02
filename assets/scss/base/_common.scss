@@ -92,13 +92,6 @@ img{
 	pointer-events: none;
 }
 
-.list-inline{
-	font-size: 0;
-	&-item{
-		font-size: 1rem;
-	}
-}
-
 /* Common Section Gap Style */
 .section-gap{
 	padding: toRem(80) 0;

@@ -1,22 +1,95 @@
 /* Footer Section Style */
 .footer{
     color: $color-white;
-    background-color: $color-black;
-    padding-top: toRem(60);
-    padding-bottom: toRem(60);
 
-
-    &__block{
-        margin-bottom: toRem(30);
-
-        &__title{
-            font-size: toRem(16);
-            font-weight: 600;
+    .section-gap--fix{
+        @include max-xl{
+            padding-bottom: 0;
         }
     }
 
+    &__bottom{
+        padding-top: toRem(20);
+        padding-bottom: toRem(20);
+        @include min-lg{
+            padding-top: toRem(40);
+            padding-bottom: toRem(40);
+        }
+
+        font-size: toRem(18);
+        font-weight: 400;
+        font-family: $font-primary-regular;
+
+        &__text{
+            font-size: toRem(18);
+        }
+
+        &__link{
+            @extend %transition;
+
+            &:hover,
+            &:focus-visible
+            {
+                color: $color-black;
+            }
+        }
+
+        &__navbar{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: toRem(20);
+        }
+    }
+
+    &__block{
+        @extend %card-gap;
+
+        &__title{
+            font-size: toRem(26);
+            font-weight: 400;
+            margin-bottom: toRem(25);
+            font-family: $font-secondary;
+            @extend %uppercase;
+
+            &.underline::after{
+                width: toRem(42);
+                height: 4px;
+                margin-top: toRem(20);
+            }
+        }
+
+        &__social{
+            display: flex;
+            align-items: center;
+            gap: toRem(20);
+            color: #808080;
+            
+            &__link{
+                font-size: toRem(20);
+                @extend %transition;
+    
+                &:hover,
+                &:focus-visible
+                {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+    &__text,
+    &__list__link__text
+    {
+        font-size: toRem(18);
+        font-weight: 400;
+        font-family: $font-primary-regular;
+    }
+
     &__text{
-        font-size: toRem(12);
+        line-height: 1.45;
+        margin-top: toRem(35);
+        margin-bottom: toRem(35);
     }
 
     &__list{
@@ -24,16 +97,24 @@
         padding-left: 0;
 
         &__item{
-            margin-bottom: 5px;
+            margin-top: toRem(18);
         }
         
         &__link{
-            font-size: toRem(12);
+            display: flex;
+            align-items: center;
+            gap: toRem(8);
 
             &:hover,
             &:focus-visible
             {
                 text-decoration: underline;
+            }
+
+            &__icon{
+                flex-shrink: 0;
+                font-size: toRem(10);
+                color: $color-primary;
             }
         }
     }

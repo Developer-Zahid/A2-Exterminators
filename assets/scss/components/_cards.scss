@@ -1,3 +1,4 @@
+/* Service Card Style */
 .service__card{
     $_radius: 8px;
     @extend %card-gap;
@@ -7,12 +8,20 @@
     &__head{
         position: relative;
         padding-top: 49%;
+        border-top-left-radius: $_radius;
+        border-top-right-radius: $_radius;
+        overflow: hidden;
     }
 
     &__image{
-        border-top-left-radius: $_radius;
-        border-top-right-radius: $_radius;
+        @extend %transition;
         @extend %full-width;
+    }
+
+    &:hover{
+        .service__card__image{
+            transform: rotate(0.5deg) scale(1.1);
+        }
     }
 
     &__body{
@@ -45,6 +54,7 @@
     }
 }
 
+/* Category Card Style */
 .category__card{
     text-align: center;
     color: $color-white;
@@ -78,6 +88,7 @@
     }
 }
 
+/* Priority Card Style */
 .priority__card{
     margin-top: toRem(25);
     margin-bottom: toRem(25);
@@ -111,6 +122,7 @@
     }
 }
 
+/* Testimonial Card Style */
 .testimonial__card{
     position: relative;
     background-color: $color-white;
@@ -212,6 +224,7 @@
     }
 }
 
+/* Feature Card Style */
 .feature__card{
     display: flex;
     align-items: center;
@@ -266,6 +279,7 @@
     }
 }
 
+/* Team Card Style */
 .team__card{
     @extend %card-gap;
 
@@ -273,8 +287,10 @@
         position: relative;
         padding-top: 131%;
         background-color: $color-black;
+        overflow: hidden;
 
         &__image{
+            transition: all 0.6s cubic-bezier(0.76, 0, 0.24, 1);
             @extend %full-width;
         }
     }
@@ -302,8 +318,51 @@
         font-weight: 400;
         font-family: $font-primary-regular;
     }
+
+    &:hover,
+    &:focus-visible
+    {
+        .team__card__figure__image{
+            transform: scale(1.2);
+            transform-origin: top;
+        }
+    }
 }
 
+/* Gallery Card Style */
 .gallery__card{
     @extend %card-gap;
+}
+
+/* Footer Block Card Style */
+.footer__block__card{
+    &__title{
+        font-size: toRem(20);
+        font-weight: 700;
+        font-family: $font-primary-bold;
+        margin-top: toRem(24);
+        margin-bottom: toRem(24);
+    }
+
+    &__list{
+        &__item{
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: toRem(18);
+    
+            &__icon{
+                flex-shrink: 0;
+                font-size: toRem(20);
+                color: $color-primary;
+            }
+        }
+        a{
+            &:hover,
+            &:focus-visible
+            {
+                text-decoration: underline;
+            }
+        }
+    }
 }

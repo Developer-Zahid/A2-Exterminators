@@ -99,15 +99,12 @@
 
 		.nav-link{
 			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: center;
 			font-size: toRem(20);
 			font-weight: 400;
 			font-family: $font-primary-regular;
 			padding: toRem(10) toRem(20);
 			
-			&::after{
+			&::before{
 				content: attr(data-text);
 				position: absolute;
 				font-weight: 700;
@@ -119,7 +116,7 @@
 			&.active{
 				color: transparent;
 
-				&::after{
+				&::before{
 					color: $color-gray;
 					opacity: 1;
 				}
@@ -147,16 +144,22 @@
 }
 
 .dropdown{
-	font-size: toRem(12);
+	&-toggle::after{
+		color: $color-primary;
+		vertical-align: 4px;
+	}
+
 	&-menu{
 		--bs-dropdown-border-width: 0;
-		--bs-dropdown-border-radius: #{toRem(8)};
+		--bs-dropdown-border-radius: 0;
 		--bs-dropdown-link-active-bg: #{$color-primary};
+		--bs-dropdown-bg: #{$color-black};
 
 		box-shadow: 0 2px 7px rgba(0,0,0,.15);
 	}
 
 	&-item{
-		font-size: toRem(14);
+		color: $color-white;
+		font-size: toRem(18);
 	}
 }

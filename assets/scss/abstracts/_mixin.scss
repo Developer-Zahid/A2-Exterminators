@@ -78,10 +78,3 @@
         @content;
     }
 }
-
-//min-md to max-lg
-@mixin minmax-md-to-lg {
-    @media (min-width: 768px) and (max-width: 1199.98px) {
-        @content;
-    }
-}

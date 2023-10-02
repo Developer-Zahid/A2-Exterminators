@@ -22,6 +22,12 @@
             font-size: toRem(14);
         }
     }
+
+    &-control.has-icon{
+        background-image: url('../images/icons/input-icon.png');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 15px) center;
+    }
 }
 
 input::-webkit-outer-spin-button,
