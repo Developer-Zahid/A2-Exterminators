@@ -1,6 +1,6 @@
 .banner{
     @extend %stacking-context;
-    min-height: calc(var(--vh,1vh) * 100 - var(--header-size));
+    min-height: calc(var(--vh,1vh) * 100 - (var(--header-size) / 2));
     display: flex;
     align-items: center;
     

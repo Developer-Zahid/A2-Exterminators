@@ -25,9 +25,13 @@
 		var scrolling = $(this).scrollTop();
 
 		if (scrolling > 200) {
-			$(".scroll-top").fadeIn();
+			$(".header__top__wrapper").slideUp();
+			$(".header").addClass('fixed');
+			$(".scroll-top").slideDown();
 		} else {
-			$(".scroll-top").fadeOut();
+			$(".header__top__wrapper").slideDown();
+			$(".header").removeClass('fixed');
+			$(".scroll-top").slideUp();
 		}
 	});
 

@@ -111,6 +111,107 @@
     }
 }
 
+.testimonial__card{
+    position: relative;
+    background-color: $color-white;
+    @extend %card-gap;
+
+    &-wrapper{
+        padding-top: toRem(60);
+    }
+    
+    &__body{
+        padding: toRem(70) toRem(40) toRem(60);
+    }
+
+    &__name{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: toRem(30);
+        font-weight: 700;
+        font-family: $font-primary-bold;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: toRem(95);
+        height: toRem(95);
+        border-radius: 50rem;
+        border: toRem(10) solid $color-white;
+        @extend %uppercase;
+    }
+
+    &__text{
+        position: relative;
+        color: $color-gray;
+        font-size: toRem(24);
+        font-weight: 300;
+        font-family: $font-primary-light;
+        font-style: italic;
+
+        &::before{
+            content: '“';
+            position: absolute;
+            right: 0;
+            font-size: toRem(200);
+            font-weight: 700;
+            font-family: Arial;
+            line-height: 1;
+            color: rgba($color-gray, $alpha: 0.1);
+            transform: translateY(-35%);
+            user-select: none;
+            pointer-events: none;
+            font-style: normal;
+        }
+
+    }
+
+    &__icons{
+        color: #ffbf14;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: toRem(15);
+    }
+
+    &__footer{
+        @extend %stacking-context;
+        background-color: $color-black;
+        padding: toRem(30) toRem(10);
+
+        &::before,
+        &::after
+        {
+            @extend %common-pseudo;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform-origin: bottom left;
+        }
+        
+        &::before{
+            transform: skewY(-3.6deg);
+            background-color: $color-primary;
+            height: toRem(40);
+        }
+        
+        &::after{
+            transform: skewY(-2deg);
+            background-color: $color-black;
+            height: toRem(50);
+        }
+    }
+
+    &__title{
+        font-size: toRem(24);
+        font-weight: 700;
+        font-family: $font-primary-bold;
+    }
+}
+
 .feature__card{
     display: flex;
     align-items: center;

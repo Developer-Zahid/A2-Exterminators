@@ -31,18 +31,20 @@
 	<!-- Header Section -->
 	<header class="header bg-white fixed-top">
 		<div class="header__top">
-			<div class="container-fluid gx-0">
-				<div class="row justify-content-end">
-					<div class="col-xl-auto">
-						<div class="header__top__card header__top__card--primary text-white">
-							<i class="fa-solid fa-location-dot me-2"></i>
-							<p class="header__top__card__text mb-0"><strong class="fw-bold">Laurens:</strong> 239 Hillcrest Drive, Laurens, SC 29360 | <a href="tel:+8646835535" class="header__top__card__link fw-bold">(864) 683-5535</a></p>
+			<div class="header__top__wrapper">
+				<div class="container-fluid gx-0">
+					<div class="row justify-content-end">
+						<div class="col-xl-auto">
+							<div class="header__top__card header__top__card--primary text-white">
+								<i class="fa-solid fa-location-dot me-2"></i>
+								<p class="header__top__card__text mb-0"><strong class="fw-bold">Laurens:</strong> 239 Hillcrest Drive, Laurens, SC 29360 | <a href="tel:+8646835535" class="header__top__card__link fw-bold">(864) 683-5535</a></p>
+							</div>
 						</div>
-					</div>
-					<div class="col-xl-auto">
-						<div class="header__top__card header__top__card--dark bg-black">
-							<i class="fa-solid fa-location-dot text-primary me-2"></i>
-							<p class="header__top__card__text text-white mb-0"><strong class="fw-bold">Spartanburg:</strong> 2375 East Main Street, Suite A203, Spartanburg, SC 29307 | <a href="tel:+8643081185" class="header__top__card__link fw-bold">(864) 308-1185</a></p>
+						<div class="col-xl-auto">
+							<div class="header__top__card header__top__card--dark bg-black">
+								<i class="fa-solid fa-location-dot text-primary me-2"></i>
+								<p class="header__top__card__text text-white mb-0"><strong class="fw-bold">Spartanburg:</strong> 2375 East Main Street, Suite A203, Spartanburg, SC 29307 | <a href="tel:+8643081185" class="header__top__card__link fw-bold">(864) 308-1185</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -330,7 +332,294 @@
 	</section>
 
 	<!-- Testimonial Section -->
-	<section class="testimonial section-gap">
+	<section class="testimonial section-gap section-gap--fix">
+		<img class="testimonial__bg user-select-none" src="./assets/images/testimonial/testimonial.png" alt="testimonial" loading="lazy">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="section-header section-header--center underline underline--center">
+						<h1 class="section-header__title">Testimonials</h1>
+						<h2 class="section-header__sub-title text-white">Checkout What Our Satisfied Customers Have to Say About Us </h2>
+					</div>
+				</div>
+			</div>
+			<div id="carouselTestimonial" class="common__carousel carousel slide" data-bs-ride="carousel">
+				<div class="carousel-control-wrapper text-end">
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="prev">
+						<i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="next">
+						<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row justify-content-center">
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row justify-content-center">
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row justify-content-center">
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row justify-content-center">
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial__card-wrapper col-xxl-4 col-lg-6">
+								<div class="testimonial__card text-center">
+									<div class="testimonial__card__name text-white bg-primary">j</div>
+									<div class="testimonial__card__content overflow-hidden">
+										<div class="testimonial__card__body">
+											<p class="testimonial__card__text mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque erat vel rutrum. Duis sem enim, tempor sed gravida imperdiet, bibendum et purus. Donec egestas lectus at sapien hendrerit non convallis magna scelerisque.</p>
+										</div>
+										<div class="testimonial__card__footer">
+											<div class="testimonial__card__icons">
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+												<i class="fa-solid fa-star"></i>
+											</div>
+											<h3 class="testimonial__card__title text-white mb-0">John Doe</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-indicators mt-1 mb-0 mx-auto">
+					<button type="button" class="carousel-indicators__dot active" data-bs-target="#carouselTestimonial" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" class="carousel-indicators__dot" data-bs-target="#carouselTestimonial" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" class="carousel-indicators__dot" data-bs-target="#carouselTestimonial" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" class="carousel-indicators__dot" data-bs-target="#carouselTestimonial" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- Feature Section -->

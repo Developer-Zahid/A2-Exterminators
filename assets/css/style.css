@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 ------------------
 Template Name: A2 Exterminators | Pest control company website
@@ -225,11 +226,11 @@ p {
 }
 
 /* Common Transition Style */
-.footer__copyright__link, .header .navbar .nav-link::after, .header .navbar-toggler, .header__top__card__link, .common__carousel .carousel-control-prev, .common__carousel .carousel-control-next {
+.footer__copyright__link, .header .navbar .nav-link::after, .header .navbar-toggler, .header .navbar-brand__image, .header__top__card__link, .common__carousel .carousel-control-prev, .common__carousel .carousel-control-next {
   transition: all ease-in-out 0.25s;
 }
 
-.map__bg, .priority__bg, .banner__bg, .team__card__figure__image, .service__card__image {
+.testimonial__bg, .map__bg, .priority__bg, .banner__bg, .team__card__figure__image, .service__card__image {
   position: absolute;
   top: 0;
   right: 0;
@@ -244,21 +245,21 @@ p {
   margin-right: auto;
 }
 
-.quote__title, .banner__sub-title, .banner__title, .priority__card__text, .category__card__title, .service__card__title, .btn, .section-header {
+.quote__title, .banner__sub-title, .banner__title, .testimonial__card__name, .priority__card__text, .category__card__title, .service__card__title, .btn, .section-header {
   text-transform: uppercase;
 }
 
-.map, .priority, .category, .banner, .header__top__card--primary, .feature__card__icon {
+.testimonial, .map, .priority, .category, .banner, .header__top__card--primary, .feature__card__icon, .testimonial__card__footer {
   position: relative;
   isolation: isolate;
 }
 
-.priority::before, .priority::after, .category::before, .category::after, .feature__card__icon::before {
+.testimonial::after, .priority::before, .priority::after, .category::before, .category::after, .feature__card__icon::before, .testimonial__card__footer::before, .testimonial__card__footer::after {
   content: "";
   position: absolute;
 }
 
-.gallery__card, .team__card, .feature__card, .category__card, .service__card {
+.gallery__card, .team__card, .feature__card, .testimonial__card, .category__card, .service__card {
   margin-bottom: 28px;
 }
 
@@ -462,6 +463,91 @@ select {
           text-decoration: #fc0706 underline;
 }
 
+.testimonial__card {
+  position: relative;
+  background-color: #ffffff;
+}
+.testimonial__card-wrapper {
+  padding-top: 3.75rem;
+}
+.testimonial__card__body {
+  padding: 4.375rem 2.5rem 3.75rem;
+}
+.testimonial__card__name {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: "Proxima Nova Rg", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.9375rem;
+  height: 5.9375rem;
+  border-radius: 50rem;
+  border: 0.625rem solid #ffffff;
+}
+.testimonial__card__text {
+  position: relative;
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-style: italic;
+}
+.testimonial__card__text::before {
+  content: "“";
+  position: absolute;
+  right: 0;
+  font-size: 12.5rem;
+  font-weight: 700;
+  font-family: Arial;
+  line-height: 1;
+  color: rgba(51, 51, 51, 0.1);
+  transform: translateY(-35%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  font-style: normal;
+}
+.testimonial__card__icons {
+  color: #ffbf14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 0.9375rem;
+}
+.testimonial__card__footer {
+  background-color: #000000;
+  padding: 1.875rem 0.625rem;
+}
+.testimonial__card__footer::before, .testimonial__card__footer::after {
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform-origin: bottom left;
+}
+.testimonial__card__footer::before {
+  transform: skewY(-3.6deg);
+  background-color: #fc0706;
+  height: 2.5rem;
+}
+.testimonial__card__footer::after {
+  transform: skewY(-2deg);
+  background-color: #000000;
+  height: 3.125rem;
+}
+.testimonial__card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Proxima Nova Rg", sans-serif;
+}
+
 .feature__card {
   display: flex;
   align-items: center;
@@ -580,6 +666,7 @@ select {
 }
 .common__carousel .carousel-control-prev:hover, .common__carousel .carousel-control-prev:focus-visible, .common__carousel .carousel-control-next:hover, .common__carousel .carousel-control-next:focus-visible {
   background-color: #000000;
+  opacity: 1 !important;
 }
 @media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
   .common__carousel .carousel-control-wrapper {
@@ -619,7 +706,6 @@ select {
 @media (min-width: 1400px) {
   .header__top__card {
     font-size: 1.125rem;
-    padding: 0.9375rem;
   }
 }
 .header__top__card--primary {
@@ -652,7 +738,7 @@ select {
 }
 @media (min-width: 1400px) {
   .header .navbar {
-    --bs-navbar-padding-y: 1.25rem;
+    --bs-navbar-padding-y: 0.9375rem;
   }
 }
 .header .navbar-brand__image {
@@ -712,6 +798,12 @@ select {
   color: #fc0706;
   box-shadow: none;
 }
+.header.fixed {
+  box-shadow: 0 3px 45px rgba(0, 0, 0, 0.15);
+}
+.header.fixed .navbar-brand__image {
+  transform: scale(1);
+}
 .header .offcanvas__close {
   line-height: 0;
   padding: 0.75rem 0.875rem;
@@ -769,7 +861,7 @@ select {
 }
 
 .banner {
-  min-height: calc(var(--vh, 1vh) * 100 - var(--header-size));
+  min-height: calc(var(--vh, 1vh) * 100 - var(--header-size) / 2);
   display: flex;
   align-items: center;
 }
@@ -1002,6 +1094,26 @@ select {
   }
 }
 
-.testimonial__card {
-  display: flex;
+.testimonial {
+  background-color: #6d0303;
+}
+.testimonial::after {
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20%;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+.testimonial__bg {
+  opacity: 0.5;
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+.testimonial .common__carousel .carousel-control-prev,
+.testimonial .common__carousel .carousel-control-next {
+  font-size: 3rem;
+  background-color: unset;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
