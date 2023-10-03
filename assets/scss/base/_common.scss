@@ -82,6 +82,10 @@ img{
 // 	}
 // }
 
+.preloader{
+	z-index: 99999;
+}
+
 @include min-xxl {
 	.container{
 		max-width: toRem(1580)

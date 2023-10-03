@@ -1,8 +1,15 @@
 /* Header Section Style */
 .header{
+	.container-fluid{
+		max-width: 1740px;
+	}
+
 	&__top{
 		@include max-lg{
 			display: none;
+		}
+		&__wrapper{
+			background-image: linear-gradient(to right, $color-white 50%, $color-black 50%);
 		}
 		&__card{
 			display: flex;
@@ -178,11 +185,11 @@
 		@extend %transition;
 
 		@include min-xl{
+			--bs-dropdown-spacer: 0;
 			display: unset;
 			transform: translateY(25%);
 			opacity: 0;
 			visibility: hidden;
-			margin-top: 0;
 
 			&::before{
 				content: '';

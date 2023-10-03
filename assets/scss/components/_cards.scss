@@ -389,6 +389,11 @@
                 font-size: toRem(20);
                 color: $color-primary;
             }
+
+            &__text{
+                font-weight: 300;
+                font-family: $font-primary-light;
+            }
         }
         a{
             &:hover,

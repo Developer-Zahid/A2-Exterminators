@@ -19,7 +19,7 @@
 
 	/* Window on load Event */
 	$(window).on('load', function () {
-        // preLoader();
+        preLoader();
     });
 
 	/* Window on resize Event */
