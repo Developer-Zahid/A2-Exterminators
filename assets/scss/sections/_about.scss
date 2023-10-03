@@ -19,4 +19,10 @@
             }
         }
     }
+
+    &__image{
+        @include max-lg{
+            max-height: toRem(400);
+        }
+    }
 }

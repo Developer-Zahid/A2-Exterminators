@@ -131,7 +131,10 @@ img{
 		}
 		font-family: $font-secondary;
 		line-height: 1;
-		margin-bottom: toRem(30);
+		margin-bottom: toRem(20);
+		@include min-xl{
+			margin-bottom: toRem(30);
+		}
 	}
 
 	&--center{
@@ -145,8 +148,7 @@ img{
 	&::after{
 		content: '';
 		display: block;
-		width: 6.5%;
-		max-width: toRem(70);
+		width: toRem(65);
 		height: 5px;
 		background-color: $color-primary;
 	}

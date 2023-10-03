@@ -20,12 +20,15 @@
         mix-blend-mode: multiply;
     }
 
-    .common__carousel .carousel-control-prev,
-    .common__carousel .carousel-control-next
-    {
-        font-size: 3rem;
-        background-color: unset;
-        opacity: 0.5;
+    @include min-xl{
+        .common__carousel .carousel-control-prev,
+        .common__carousel .carousel-control-next
+        {
+            font-size: 3rem;
+            background-color: unset;
+            opacity: 0.5;
+        }
     }
+
 
 }

@@ -8,6 +8,12 @@
         }
     }
 
+    &__logo{
+        @include max-lg{
+            max-height: toRem(80);
+        }
+    }
+
     &__bottom{
         padding-top: toRem(20);
         padding-bottom: toRem(20);

@@ -28,7 +28,10 @@
     }
 
     &__title{
-        font-size: toRem(50);
+        font-size: toRem(40);
+        @include min-md{
+            font-size: toRem(50);
+        }
         @include min-xxl{
             font-size: toRem(70);
         }

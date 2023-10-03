@@ -99,7 +99,10 @@
 
 		.nav-link{
 			position: relative;
-			font-size: toRem(20);
+			font-size: toRem(17);
+			@include min-xxl{
+				font-size: toRem(20);
+			}
 			font-weight: 400;
 			font-family: $font-primary-regular;
 			padding: toRem(10) toRem(20);
@@ -144,9 +147,24 @@
 }
 
 .dropdown{
-	&-toggle::after{
-		color: $color-primary;
-		vertical-align: 4px;
+	&-toggle{
+		&::after{
+			color: $color-primary;
+			vertical-align: 4px;
+		}
+
+		@include min-xl{
+			&:hover,
+			&:focus-visible,
+			&.show
+			{
+				+ .dropdown-menu{
+					transform: translateY(0);
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
 	}
 
 	&-menu{
@@ -156,10 +174,50 @@
 		--bs-dropdown-bg: #{$color-black};
 
 		box-shadow: 0 2px 7px rgba(0,0,0,.15);
+
+		@extend %transition;
+
+		@include min-xl{
+			display: unset;
+			transform: translateY(25%);
+			opacity: 0;
+			visibility: hidden;
+			margin-top: 0;
+
+			&::before{
+				content: '';
+				position: absolute;
+				z-index: -1;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: toRem(10);
+				transform: translateY(-100%);
+			}
+
+			&:hover,
+			&:focus-visible
+			{
+				transform: translateY(0);
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	&:focus-within .dropdown-menu{
+		@include min-xl{
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible;
+		}
 	}
 
 	&-item{
 		color: $color-white;
-		font-size: toRem(18);
+		font-size: toRem(16);
+		@include min-xxl{
+			font-size: toRem(18);
+		}
 	}
 }

@@ -7,6 +7,12 @@
         z-index: -1;
     }
 
+    &__image{
+        @include max-lg{
+            max-height: toRem(400);
+        }
+    }
+
     &__text{
         font-size: toRem(24);
         @include min-xxl{
