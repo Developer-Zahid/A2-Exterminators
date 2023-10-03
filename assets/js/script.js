@@ -3,7 +3,7 @@
 
 	/* Preloader init */
 	function preLoader(){
-		$(".preloader").delay(1000).fadeOut("slow");
+		$(".preloader").delay(400).fadeOut("slow");
 	}
 
 	/* Fix Header Height function */

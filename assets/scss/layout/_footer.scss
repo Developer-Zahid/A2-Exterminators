@@ -124,18 +124,4 @@
             }
         }
     }
-
-    &__copyright{
-        color: $color-white;
-        font-size: toRem(14);
-
-        &__link{
-            @extend %transition;
-
-            &:hover,
-            &:focus{
-                text-decoration: underline;
-            }
-        }
-    }
 }
