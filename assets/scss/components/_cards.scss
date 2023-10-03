@@ -133,7 +133,10 @@
     }
     
     &__body{
-        padding: toRem(70) toRem(40) toRem(60);
+        padding: toRem(60) toRem(20) toRem(40);
+        @include min-xxl{
+            padding: toRem(70) toRem(40) toRem(60);
+        }
     }
 
     &__name{
@@ -150,14 +153,20 @@
         width: toRem(95);
         height: toRem(95);
         border-radius: 50rem;
-        border: toRem(10) solid $color-white;
+        border: toRem(6) solid $color-white;
+        @include min-xxl{
+            border-width: toRem(10);
+        }
         @extend %uppercase;
     }
 
     &__text{
         position: relative;
         color: $color-gray;
-        font-size: toRem(24);
+        font-size: toRem(18);
+        @include min-xxl{
+            font-size: toRem(24);
+        }
         font-weight: 300;
         font-family: $font-primary-light;
         font-style: italic;
@@ -166,7 +175,10 @@
             content: '“';
             position: absolute;
             right: 0;
-            font-size: toRem(200);
+            font-size: toRem(150);
+            @include min-xxl{
+                font-size: toRem(200);
+            }
             font-weight: 700;
             font-family: Arial;
             line-height: 1;
@@ -218,7 +230,10 @@
     }
 
     &__title{
-        font-size: toRem(24);
+        font-size: toRem(20);
+        @include min-xxl{
+            font-size: toRem(24);
+        }
         font-weight: 700;
         font-family: $font-primary-bold;
     }
@@ -252,10 +267,17 @@
             height: 100%;
             background-color: $color-primary;
             transform: skewX(-14deg);
+            transition: transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
         }
 
         &__image{
             height: auto;
+        }
+    }
+
+    &:hover{
+        .feature__card__icon::before{
+            transform: skewX(14deg);
         }
     }
 
@@ -297,24 +319,35 @@
 
     &__body{
         position: relative;
-        padding: toRem(35) toRem(10) toRem(25);
+        padding: toRem(20) toRem(5);
         border-bottom: 7px solid $color-primary;
         margin-top: toRem(-60);
-        margin-left: toRem(22);
-        margin-right: toRem(22);
+        margin-left: toRem(15);
+        margin-right: toRem(15);
+        @include min-xxl{
+            padding: toRem(35) toRem(10) toRem(25);
+            margin-left: toRem(22);
+            margin-right: toRem(22);
+        }
         box-shadow: 0 0 toRem(20) rgba($color-black, $alpha: 0.1);
     }
 
     &__title{
         color: $color-gray;
-        font-size: toRem(30);
+        font-size: toRem(22);
+        @include min-xxl{
+            font-size: toRem(30);
+        }
         font-weight: 700;
         font-family: $font-primary-bold;
     }
 
     &__text{
         color: $color-gray;
-        font-size: toRem(20);
+        font-size: toRem(16);
+        @include min-xxl{
+            font-size: toRem(20);
+        }
         font-weight: 400;
         font-family: $font-primary-regular;
     }

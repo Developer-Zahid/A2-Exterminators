@@ -8,6 +8,10 @@
             font-size: toRem(18);
             padding: toRem(22) toRem(20);
         }
+        @include max-xl{
+            padding-top: toRem(18);
+            padding-bottom: toRem(18);
+        }
 
         &::placeholder{
             color: currentColor;
