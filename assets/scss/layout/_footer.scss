@@ -24,7 +24,7 @@
 
         font-size: toRem(18);
         font-weight: 400;
-        font-family: $font-primary-regular;
+        font-family: $font-primary;
 
         &__text{
             font-size: toRem(18);
@@ -52,9 +52,10 @@
         @extend %card-gap;
 
         &__title{
-            font-size: toRem(26);
-            font-weight: 400;
             margin-bottom: toRem(25);
+            font-size: toRem(26);
+            font-weight: 700;
+            letter-spacing: -1px;
             font-family: $font-secondary;
             @extend %uppercase;
 
@@ -89,7 +90,7 @@
     {
         font-size: toRem(18);
         font-weight: 400;
-        font-family: $font-primary-regular;
+        font-family: $font-primary;
     }
 
     &__text{

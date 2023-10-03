@@ -61,6 +61,70 @@ Author Email: 	    dgtaltechzahidhasan@gmail.com
 				$(this).html(`<iframe src="${$(this).attr("data-iframe-src")}" style="border:0;" allowfullscreen frameborder="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`)
 			})
 		}, 2000)
+
+		$(".team__slider").slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			speed: 500,
+			arrows: true,
+			prevArrow: '<button class="slick__arrows slick__arrows--left border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fa-solid fa-arrow-left-long" aria-hidden="true"></i></button>',
+			nextArrow: '<button class="slick__arrows slick__arrows--right border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></button>',
+			dots: false,
+			pauseOnHover: false,
+			pauseOnFocus: false,
+			infinite: true,
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 3,
+					}
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+					}
+				},
+			]
+		});
+
+		$(".testimonial__slider").slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			speed: 500,
+			arrows: true,
+			prevArrow: '<button class="slick__arrows slick__arrows--left border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>',
+			nextArrow: '<button class="slick__arrows slick__arrows--right border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>',
+			dots: true,
+			pauseOnHover: false,
+			pauseOnFocus: false,
+			infinite: true,
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2,
+					}
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 1,
+					}
+				},
+			]
+		});
 	});
 
 	/* Window on scroll Event */

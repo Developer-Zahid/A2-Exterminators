@@ -80,3 +80,100 @@
         }
     }
 }
+
+/* Common Slick Style */
+.slick{
+    &-slider{
+        @media (min-width: 1400px) and (max-width: 1799.98px) {
+            padding-top: toRem(75);
+        }
+        @media (max-width: 1299.98px){
+            padding-top: toRem(60);
+        }
+    }
+
+    &-slide{
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+	&__arrows{
+        @extend %transition;
+		position: absolute;
+		z-index: 2;
+		cursor: pointer;
+        color: $color-white;
+        background-color: $color-primary;
+        width: toRem(50);
+        height: toRem(50);
+        font-size: toRem(20);
+        @include min-xxl{
+            width: toRem(60);
+            height: toRem(60);
+            font-size: toRem(22);
+        }
+        @media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
+            top: 0;
+            right: $gutter / 2;
+        }
+        @media (min-width: 1300px) and (max-width: 1399.98px), (min-width: 1800px) {
+            top: 50%;
+        }
+
+        &--left{
+            @media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
+                transform: translateX(calc(-100% - ($gutter / 2)));
+            }
+            @media (min-width: 1300px) and (max-width: 1399.98px), (min-width: 1800px) {
+                transform: translateX(calc(-100% - ($gutter / 2))) translateY(-50%);
+            }
+        }
+
+        &--right{
+            @media (min-width: 1300px) and (max-width: 1399.98px), (min-width: 1800px) {
+                right: 0;
+                transform: translateX(calc(100% + ($gutter / 2))) translateY(-50%);
+            }
+        }
+
+        &:hover,
+        &:focus-visible
+        {
+            background-color: $color-black;
+        }
+	}
+
+	&-dots{
+		display: flex;
+		justify-content: center;
+		margin-top: toRem(15);
+		margin-bottom: toRem(15);
+		line-height: 0;
+		list-style-type: none;
+		li{
+			&:not(:last-child){
+				margin-right: 10px;
+			}
+			button{
+				font-size: 0;
+                width: toRem(13);
+                height: toRem(13);
+                border-radius: 10rem;
+                background-color: #7f7f7f;
+                border: 0;
+				@extend %transition;
+
+                &:hover,
+                &:focus-visible
+                {
+                    background-color: $color-black;
+                }
+			}
+			&.slick-active{
+				button{
+					background-color: $color-primary;
+				}
+			}
+		}
+	}
+}

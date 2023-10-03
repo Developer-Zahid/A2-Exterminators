@@ -21,14 +21,17 @@
     }
 
     @include min-xl{
-        .common__carousel .carousel-control-prev,
-        .common__carousel .carousel-control-next
-        {
+        .slick__arrows{
             font-size: 3rem;
-            background-color: unset;
             opacity: 0.5;
+            background-color: unset !important;
+
+            &:hover,
+            &:focus-visible
+            {
+                opacity: 1;
+            }
         }
     }
-
 
 }

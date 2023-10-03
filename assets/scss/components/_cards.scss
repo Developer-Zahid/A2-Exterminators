@@ -40,7 +40,7 @@
         color: $color-gray;
         font-size: toRem(20);
         line-height: 1.6;
-        font-family: $font-primary-bold;
+        font-family: $font-primary;
         font-weight: 700;
         @extend %uppercase;
     }
@@ -48,7 +48,7 @@
     &__text{
         color: $color-gray-light;
         font-size: toRem(18);
-        font-family: $font-primary-light;
+        font-family: $font-primary;
         font-weight: 300;
         margin-top: auto;
     }
@@ -71,7 +71,7 @@
     &__title{
         font-size: toRem(20);
         font-weight: 700;
-        font-family: $font-primary-bold;
+        font-family: $font-primary;
         line-height: 1.3;
         margin-top: toRem(30);
         @extend %uppercase;
@@ -82,7 +82,7 @@
             font-size: toRem(18);
         }
         font-weight: 300;
-        font-family: $font-primary-light;
+        font-family: $font-primary;
         line-height: 1.4;
         margin-bottom: 0;
     }
@@ -97,7 +97,7 @@
     &__link
     {
         font-weight: 700;
-        font-family: $font-primary-bold;
+        font-family: $font-primary;
     }
     &__text{
         font-size: toRem(20);
@@ -146,7 +146,7 @@
         transform: translate(-50%, -50%);
         font-size: toRem(30);
         font-weight: 700;
-        font-family: $font-primary-bold;
+        font-family: $font-primary;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -165,10 +165,10 @@
         color: $color-gray;
         font-size: toRem(18);
         @include min-xxl{
-            font-size: toRem(24);
+            font-size: toRem(20);
         }
         font-weight: 300;
-        font-family: $font-primary-light;
+        font-family: $font-primary;
         font-style: italic;
 
         &::before{
@@ -235,7 +235,7 @@
             font-size: toRem(24);
         }
         font-weight: 700;
-        font-family: $font-primary-bold;
+        font-family: $font-primary;
     }
 }
 
@@ -287,7 +287,7 @@
             font-size: toRem(26);
         }
         font-weight: 700;
-        font-family: $font-primary-bold;
+        font-family: $font-primary;
     }
 
     &__text{
@@ -296,7 +296,7 @@
             font-size: toRem(18);
         }
         font-weight: 300;
-        font-family: $font-primary-light;
+        font-family: $font-primary;
         margin-bottom: 0;
     }
 }
@@ -339,7 +339,7 @@
             font-size: toRem(30);
         }
         font-weight: 700;
-        font-family: $font-primary-bold;
+        font-family: $font-primary;
     }
 
     &__text{
@@ -349,7 +349,7 @@
             font-size: toRem(20);
         }
         font-weight: 400;
-        font-family: $font-primary-regular;
+        font-family: $font-primary;
     }
 
     &:hover,
@@ -372,7 +372,7 @@
     &__title{
         font-size: toRem(20);
         font-weight: 700;
-        font-family: $font-primary-bold;
+        font-family: $font-primary;
         margin-top: toRem(24);
         margin-bottom: toRem(24);
     }
@@ -392,7 +392,7 @@
 
             &__text{
                 font-weight: 300;
-                font-family: $font-primary-light;
+                font-family: $font-primary;
             }
         }
         a{

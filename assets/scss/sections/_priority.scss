@@ -32,11 +32,10 @@
         @include min-md{
             font-size: toRem(50);
         }
-        @include min-xxl{
-            font-size: toRem(70);
-        }
-        font-weight: 400;
+       
+        font-weight: 700;
         font-family: $font-secondary;
         line-height: 1;
+        @extend %uppercase;
     }
 }

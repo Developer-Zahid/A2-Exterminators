@@ -46,7 +46,7 @@ html {
 
 body {
   color: #000000;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -125,26 +125,28 @@ img {
 }
 .section-header__title {
   color: #fc0706;
-  font-size: 1.25rem;
-  font-family: "proxima-nova", sans-serif;
+  font-size: 1.125rem;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-bottom: 1.25rem;
 }
 @media (min-width: 992px) {
   .section-header__title {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   }
 }
 .section-header__sub-title {
   color: #333333;
-  font-size: 2.5rem;
-  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.875rem;
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
   line-height: 1;
+  letter-spacing: -0.8px;
   margin-bottom: 1.25rem;
 }
 @media (min-width: 1400px) {
   .section-header__sub-title {
-    font-size: 4.125rem;
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -200,7 +202,7 @@ img {
 }
 
 .fw-bold {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Figtree", sans-serif;
 }
 
 /* Typography Reset */
@@ -210,7 +212,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1, .h1 {
@@ -242,7 +244,7 @@ p {
   }
 }
 
-.footer__block__social__link, .footer__bottom__link, .dropdown-menu, .header .navbar .nav-link::before, .header .navbar-toggler, .header .navbar-brand__image, .header__top__card__link, .common__carousel .carousel-control-prev, .common__carousel .carousel-control-next, .service__card__image {
+.footer__block__social__link, .footer__bottom__link, .dropdown-menu, .header .navbar .nav-link::before, .header .navbar-toggler, .header .navbar-brand__image, .header__top__card__link, .slick-dots li button, .slick__arrows, .common__carousel .carousel-control-prev, .common__carousel .carousel-control-next, .service__card__image {
   -webkit-transition: all ease-in-out 0.25s;
   -o-transition: all ease-in-out 0.25s;
   transition: all ease-in-out 0.25s;
@@ -263,7 +265,7 @@ p {
   margin-right: auto;
 }
 
-.quote__title, .banner__sub-title, .banner__title, .footer__block__title, .header .navbar .nav-link, .testimonial__card__name, .priority__card__text, .category__card__title, .service__card__title, .btn, .section-header {
+.quote__title, .priority__title, .banner__sub-title, .banner__title, .footer__block__title, .header .navbar .nav-link, .testimonial__card__name, .priority__card__text, .category__card__title, .service__card__title, .btn, .section-header {
   text-transform: uppercase;
 }
 
@@ -286,11 +288,12 @@ p {
   --bs-btn-padding-y: 0.9375rem;
   --bs-btn-padding-x: 1.5625rem;
   --bs-btn-font-size: 1rem;
-  --bs-btn-font-family: proxima-nova, sans-serif;
+  --bs-btn-font-family: Montserrat, sans-serif;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  letter-spacing: -0.8px;
 }
 @media (min-width: 1400px) {
   .btn {
@@ -452,13 +455,13 @@ select {
   color: #333333;
   font-size: 1.25rem;
   line-height: 1.6;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 .service__card__text {
   color: #666666;
   font-size: 1.125rem;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin-top: auto;
 }
@@ -476,13 +479,13 @@ select {
 .category__card__title {
   font-size: 1.25rem;
   font-weight: 700;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.3;
   margin-top: 1.875rem;
 }
 .category__card__text {
   font-weight: 300;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.4;
   margin-bottom: 0;
 }
@@ -499,7 +502,7 @@ select {
 }
 .priority__card__text, .priority__card__link {
   font-weight: 700;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .priority__card__text {
   font-size: 1.25rem;
@@ -549,7 +552,7 @@ select {
           transform: translate(-50%, -50%);
   font-size: 1.875rem;
   font-weight: 700;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -574,12 +577,12 @@ select {
   color: #333333;
   font-size: 1.125rem;
   font-weight: 300;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
 }
 @media (min-width: 1400px) {
   .testimonial__card__text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 .testimonial__card__text::before {
@@ -650,7 +653,7 @@ select {
 .testimonial__card__title {
   font-size: 1.25rem;
   font-weight: 700;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 1400px) {
   .testimonial__card__title {
@@ -718,7 +721,7 @@ select {
 .feature__card__title {
   color: #000000;
   font-weight: 700;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 1400px) {
   .feature__card__title {
@@ -728,7 +731,7 @@ select {
 .feature__card__text {
   color: #333333;
   font-weight: 300;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 0;
 }
 @media (min-width: 1400px) {
@@ -770,7 +773,7 @@ select {
   color: #333333;
   font-size: 1.375rem;
   font-weight: 700;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 1400px) {
   .team__card__title {
@@ -781,7 +784,7 @@ select {
   color: #333333;
   font-size: 1rem;
   font-weight: 400;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 1400px) {
   .team__card__text {
@@ -802,7 +805,7 @@ select {
 .footer__block__card__title {
   font-size: 1.25rem;
   font-weight: 700;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -824,7 +827,7 @@ select {
 }
 .footer__block__card__list__item__text {
   font-weight: 300;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .footer__block__card__list a:hover, .footer__block__card__list a:focus-visible {
   text-decoration: underline;
@@ -902,6 +905,104 @@ select {
   background-color: #fc0706;
 }
 
+/* Common Slick Style */
+@media (min-width: 1400px) and (max-width: 1799.98px) {
+  .slick-slider {
+    padding-top: 4.6875rem;
+  }
+}
+@media (max-width: 1299.98px) {
+  .slick-slider {
+    padding-top: 3.75rem;
+  }
+}
+.slick-slide {
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+.slick__arrows {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #fc0706;
+  width: 3.125rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+}
+@media (min-width: 1400px) {
+  .slick__arrows {
+    width: 3.75rem;
+    height: 3.75rem;
+    font-size: 1.375rem;
+  }
+}
+@media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
+  .slick__arrows {
+    top: 0;
+    right: 14px;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1399.98px), (min-width: 1800px) {
+  .slick__arrows {
+    top: 50%;
+  }
+}
+@media (max-width: 1299.98px), (min-width: 1400px) and (max-width: 1799.98px) {
+  .slick__arrows--left {
+    -webkit-transform: translateX(calc(-100% - 14px));
+        -ms-transform: translateX(calc(-100% - 14px));
+            transform: translateX(calc(-100% - 14px));
+  }
+}
+@media (min-width: 1300px) and (max-width: 1399.98px), (min-width: 1800px) {
+  .slick__arrows--left {
+    -webkit-transform: translateX(calc(-100% - 14px)) translateY(-50%);
+        -ms-transform: translateX(calc(-100% - 14px)) translateY(-50%);
+            transform: translateX(calc(-100% - 14px)) translateY(-50%);
+  }
+}
+@media (min-width: 1300px) and (max-width: 1399.98px), (min-width: 1800px) {
+  .slick__arrows--right {
+    right: 0;
+    -webkit-transform: translateX(calc(100% + 14px)) translateY(-50%);
+        -ms-transform: translateX(calc(100% + 14px)) translateY(-50%);
+            transform: translateX(calc(100% + 14px)) translateY(-50%);
+  }
+}
+.slick__arrows:hover, .slick__arrows:focus-visible {
+  background-color: #000000;
+}
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  line-height: 0;
+  list-style-type: none;
+}
+.slick-dots li:not(:last-child) {
+  margin-right: 10px;
+}
+.slick-dots li button {
+  font-size: 0;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border-radius: 10rem;
+  background-color: #7f7f7f;
+  border: 0;
+}
+.slick-dots li button:hover, .slick-dots li button:focus-visible {
+  background-color: #000000;
+}
+.slick-dots li.slick-active button {
+  background-color: #fc0706;
+}
+
 /* Header Section Style */
 .header .container-fluid {
   max-width: 1740px;
@@ -963,6 +1064,7 @@ select {
 }
 .header__top__card__text {
   font-size: inherit;
+  font-family: "Figtree", sans-serif;
 }
 @media (min-width: 1400px) {
   .header .navbar {
@@ -974,9 +1076,9 @@ select {
 }
 @media (min-width: 1300px) {
   .header .navbar-brand__image {
-    -webkit-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
     -webkit-transform-origin: bottom left;
         -ms-transform-origin: bottom left;
             transform-origin: bottom left;
@@ -1013,7 +1115,8 @@ select {
   position: relative;
   font-size: 1.0625rem;
   font-weight: 400;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: -0.5px;
   padding: 0.625rem 1.25rem;
 }
 @media (min-width: 1400px) {
@@ -1025,7 +1128,7 @@ select {
   content: attr(data-text);
   position: absolute;
   font-weight: 700;
-  font-family: "proxima-nova", sans-serif;
+  font-family: inherit;
   opacity: 0;
 }
 .header .navbar .nav-link.active {
@@ -1143,7 +1246,7 @@ select {
   padding-bottom: 1.25rem;
   font-size: 1.125rem;
   font-weight: 400;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 992px) {
   .footer__bottom {
@@ -1169,10 +1272,11 @@ select {
   gap: 1.25rem;
 }
 .footer__block__title {
-  font-size: 1.625rem;
-  font-weight: 400;
   margin-bottom: 1.5625rem;
-  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-family: "Figtree", sans-serif;
 }
 .footer__block__title.underline::after {
   width: 2.625rem;
@@ -1198,7 +1302,7 @@ select {
 .footer__text, .footer__list__link__text {
   font-size: 1.125rem;
   font-weight: 400;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .footer__text {
   line-height: 1.45;
@@ -1251,9 +1355,10 @@ select {
 }
 .banner__title {
   font-size: 3.75rem;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
   line-height: 0.9;
+  letter-spacing: -1px;
 }
 @media (min-width: 768px) {
   .banner__title {
@@ -1262,13 +1367,13 @@ select {
 }
 @media (min-width: 1400px) {
   .banner__title {
-    font-size: 9.375rem;
+    font-size: 6.25rem;
   }
 }
 .banner__sub-title {
   font-size: 1.25rem;
   font-weight: 600;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 1.875rem;
 }
 @media (min-width: 992px) {
@@ -1428,8 +1533,8 @@ select {
 }
 .priority__title {
   font-size: 2.5rem;
-  font-weight: 400;
-  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-family: "Figtree", sans-serif;
   line-height: 1;
 }
 @media (min-width: 768px) {
@@ -1437,17 +1542,12 @@ select {
     font-size: 3.125rem;
   }
 }
-@media (min-width: 1400px) {
-  .priority__title {
-    font-size: 4.375rem;
-  }
-}
 
 .about__text {
   font-size: 1.125rem;
   color: #666666;
   font-weight: 300;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .about__list__item {
   display: -webkit-box;
@@ -1483,7 +1583,7 @@ select {
   font-size: 1.5rem;
   line-height: 1.39;
   font-weight: 300;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 1400px) {
   .map__text {
@@ -1492,20 +1592,21 @@ select {
 }
 
 .quote__title {
-  font-size: 3.125rem;
-  font-weight: 400;
-  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.1875rem;
+  font-weight: 700;
+  font-family: "Figtree", sans-serif;
   line-height: 1;
+  letter-spacing: -2px;
 }
 @media (min-width: 1400px) {
   .quote__title {
-    font-size: 4.375rem;
+    font-size: 3.125rem;
   }
 }
 .quote__text {
   font-size: 1.25rem;
   font-weight: 600;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 1400px) {
   .quote__text {
@@ -1531,10 +1632,12 @@ select {
   mix-blend-mode: multiply;
 }
 @media (min-width: 1200px) {
-  .testimonial .common__carousel .carousel-control-prev,
-  .testimonial .common__carousel .carousel-control-next {
+  .testimonial .slick__arrows {
     font-size: 3rem;
-    background-color: unset;
     opacity: 0.5;
+    background-color: unset !important;
+  }
+  .testimonial .slick__arrows:hover, .testimonial .slick__arrows:focus-visible {
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */

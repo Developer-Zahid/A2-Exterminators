@@ -21,11 +21,12 @@
             font-size: toRem(80);
         }
         @include min-xxl{
-            font-size: toRem(150);
+            font-size: toRem(100);
         }
         font-family: $font-secondary;
-        font-weight: 400;
+        font-weight: 700;
         line-height: 0.9;
+        letter-spacing: -1px;
         @extend %uppercase;
     }
     
@@ -35,7 +36,7 @@
             font-size: toRem(30);
         }
         font-weight: 600;
-        font-family: $font-primary-semibold;
+        font-family: $font-primary;
         margin-bottom: toRem(30);
         @extend %uppercase;
     }

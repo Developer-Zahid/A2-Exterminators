@@ -11,10 +11,11 @@
 	}
 
 
-	--bs-btn-font-family: #{$font-primary-bold};
+	--bs-btn-font-family: #{$font-primary};
 	--bs-btn-font-weight: 700;
 	--bs-btn-line-height: 1;
 	box-shadow: none !important;
+	letter-spacing: -0.8px;
 	@extend %uppercase;
 }
 

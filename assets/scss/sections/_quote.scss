@@ -1,12 +1,13 @@
 .quote{
     &__title{
-        font-size: toRem(50);
+        font-size: toRem(35);
         @include min-xxl{
-            font-size: toRem(70);
+            font-size: toRem(50);
         }
-        font-weight: 400;
+        font-weight: 700;
         font-family: $font-secondary;
         line-height: 1;
+        letter-spacing: -2px;
         @extend %uppercase;
     }
 
@@ -16,6 +17,6 @@
             font-size: toRem(30);
         }
         font-weight: 600;
-        font-family: $font-primary-semibold;
+        font-family: $font-primary;
     }
 }

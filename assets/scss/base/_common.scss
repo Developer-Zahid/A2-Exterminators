@@ -25,7 +25,7 @@ html{
 
 body {
 	color: $color-black;
-	font-family: $font-primary-regular;
+	font-family: $font-primary;
 	font-weight: 400;
 }
 
@@ -105,23 +105,25 @@ img{
 
 	&__title{
 		color: $color-primary;
-		font-size: toRem(20);
+		font-size: toRem(18);
 		@include min-lg{
-			font-size: toRem(22);
+			font-size: toRem(20);
 		}
-		font-family: $font-primary-bold;
+		font-family: $font-primary;
 		font-weight: 700;
 		margin-bottom: toRem(20);
 	}
 
 	&__sub-title{
 		color: $color-gray;
-		font-size: toRem(40);
+		font-size: toRem(30);
 		@include min-xxl{
-			font-size: toRem(66);
+			font-size: toRem(40);
 		}
 		font-family: $font-secondary;
+		font-weight: 700;
 		line-height: 1;
+		letter-spacing: -0.8px;
 		margin-bottom: toRem(20);
 		@include min-xl{
 			margin-bottom: toRem(30);
@@ -175,5 +177,5 @@ img{
 }
 
 .fw-bold{
-	font-family: $font-primary-bold;
+	font-family: $font-secondary;
 }
