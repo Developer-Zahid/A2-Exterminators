@@ -116,6 +116,7 @@
 			font-weight: 400;
 			font-family: $font-primary-regular;
 			padding: toRem(10) toRem(20);
+			@extend %uppercase;
 			
 			&::before{
 				content: attr(data-text);

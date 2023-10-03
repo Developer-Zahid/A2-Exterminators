@@ -263,7 +263,7 @@ p {
   margin-right: auto;
 }
 
-.quote__title, .banner__sub-title, .banner__title, .footer__block__title, .testimonial__card__name, .priority__card__text, .category__card__title, .service__card__title, .btn, .section-header {
+.quote__title, .banner__sub-title, .banner__title, .footer__block__title, .header .navbar .nav-link, .testimonial__card__name, .priority__card__text, .category__card__title, .service__card__title, .btn, .section-header {
   text-transform: uppercase;
 }
 
