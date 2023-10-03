@@ -73,9 +73,12 @@
 			max-height: toRem(65);
 			@extend %transition;
 
+			@media (min-width: 1300px) {
+				transform: scale(1.5);
+				transform-origin: bottom left;
+			}
 			@media (min-width: 1600px) {
 				transform: scale(1.8);
-				transform-origin: bottom left;
 			}
 		}
 

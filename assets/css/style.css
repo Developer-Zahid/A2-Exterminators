@@ -972,14 +972,21 @@ select {
 .header .navbar-brand__image {
   max-height: 4.0625rem;
 }
+@media (min-width: 1300px) {
+  .header .navbar-brand__image {
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+  }
+}
 @media (min-width: 1600px) {
   .header .navbar-brand__image {
     -webkit-transform: scale(1.8);
         -ms-transform: scale(1.8);
             transform: scale(1.8);
-    -webkit-transform-origin: bottom left;
-        -ms-transform-origin: bottom left;
-            transform-origin: bottom left;
   }
 }
 .header .navbar-toggler {
