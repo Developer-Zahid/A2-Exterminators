@@ -113,7 +113,7 @@
 
 		.nav-link{
 			position: relative;
-			font-size: toRem(17);
+			font-size: toRem(16);
 			@include min-xxl{
 				font-size: toRem(20);
 			}

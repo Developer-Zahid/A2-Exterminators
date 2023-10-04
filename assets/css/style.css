@@ -1139,7 +1139,7 @@ select {
 }
 .header .navbar .nav-link {
   position: relative;
-  font-size: 1.0625rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: "Nunito Sans", sans-serif;
   letter-spacing: -0.5px;
