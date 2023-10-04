@@ -66,6 +66,9 @@
 	}
 
 	.navbar{
+		@include max-sm{
+			--bs-navbar-padding-y: 5px;
+		}
 		@include min-xxl{
 			--bs-navbar-padding-y: #{toRem(15)};
 		}

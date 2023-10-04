@@ -22,12 +22,18 @@
             padding-bottom: toRem(40);
         }
 
-        font-size: toRem(18);
+        font-size: toRem(14);
+        @include min-sm{
+            font-size: toRem(18);
+        }
         font-weight: 400;
         font-family: $font-primary;
 
         &__text{
-            font-size: toRem(18);
+            font-size: toRem(14);
+            @include min-sm{
+                font-size: toRem(18);
+            }
         }
 
         &__link{
@@ -88,7 +94,10 @@
     &__text,
     &__list__link__text
     {
-        font-size: toRem(18);
+        font-size: toRem(16);
+        @include min-sm{
+            font-size: toRem(18);
+        }
         font-weight: 400;
         font-family: $font-primary;
     }

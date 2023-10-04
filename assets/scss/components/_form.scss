@@ -9,8 +9,12 @@
             padding: toRem(22) toRem(20);
         }
         @include max-xl{
-            padding-top: toRem(18);
-            padding-bottom: toRem(18);
+            padding-top: toRem(15);
+            padding-bottom: toRem(15);
+        }
+        @include max-sm{
+            padding-top: toRem(8);
+            padding-bottom: toRem(8);
         }
 
         &::placeholder{

@@ -100,7 +100,10 @@
         font-family: $font-primary;
     }
     &__text{
-        font-size: toRem(20);
+        font-size: toRem(16);
+        @include min-sm{
+            font-size: toRem(20);
+        }
         @include min-xxl{
             font-size: toRem(24);
         }
@@ -109,7 +112,10 @@
         @extend %uppercase;
     }
     &__link{
-        font-size: toRem(35);
+        font-size: toRem(20);
+        @include min-sm{
+            font-size: toRem(35);
+        }
         @include min-xxl{
             font-size: toRem(50);
         }
@@ -283,6 +289,9 @@
 
     &__title{
         color: $color-black;
+        @include max-sm{
+            font-size: toRem(18);
+        }
         @include min-xxl{
             font-size: toRem(26);
         }

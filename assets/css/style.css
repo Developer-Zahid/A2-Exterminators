@@ -359,8 +359,14 @@ p {
 }
 @media (max-width: 1399.98px) {
   .form-control, .form-select {
-    padding-top: 1.125rem;
-    padding-bottom: 1.125rem;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .form-control, .form-select {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 .form-control::-webkit-input-placeholder, .form-select::-webkit-input-placeholder {
@@ -505,9 +511,14 @@ select {
   font-family: "Montserrat", sans-serif;
 }
 .priority__card__text {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 0;
   line-height: 1;
+}
+@media (min-width: 576px) {
+  .priority__card__text {
+    font-size: 1.25rem;
+  }
 }
 @media (min-width: 1400px) {
   .priority__card__text {
@@ -515,7 +526,12 @@ select {
   }
 }
 .priority__card__link {
-  font-size: 2.1875rem;
+  font-size: 1.25rem;
+}
+@media (min-width: 576px) {
+  .priority__card__link {
+    font-size: 2.1875rem;
+  }
 }
 @media (min-width: 1400px) {
   .priority__card__link {
@@ -722,6 +738,11 @@ select {
   color: #000000;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 767.98px) {
+  .feature__card__title {
+    font-size: 1.125rem;
+  }
 }
 @media (min-width: 1400px) {
   .feature__card__title {
@@ -1066,6 +1087,11 @@ select {
   font-size: inherit;
   font-family: "Figtree", sans-serif;
 }
+@media (max-width: 767.98px) {
+  .header .navbar {
+    --bs-navbar-padding-y: 5px;
+  }
+}
 @media (min-width: 1400px) {
   .header .navbar {
     --bs-navbar-padding-y: 0.9375rem;
@@ -1244,7 +1270,7 @@ select {
 .footer__bottom {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
@@ -1254,8 +1280,18 @@ select {
     padding-bottom: 2.5rem;
   }
 }
+@media (min-width: 576px) {
+  .footer__bottom {
+    font-size: 1.125rem;
+  }
+}
 .footer__bottom__text {
-  font-size: 1.125rem;
+  font-size: 0.875rem;
+}
+@media (min-width: 576px) {
+  .footer__bottom__text {
+    font-size: 1.125rem;
+  }
 }
 .footer__bottom__link:hover, .footer__bottom__link:focus-visible {
   color: #000000;
@@ -1300,9 +1336,14 @@ select {
   color: #fc0706;
 }
 .footer__text, .footer__list__link__text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 576px) {
+  .footer__text, .footer__list__link__text {
+    font-size: 1.125rem;
+  }
 }
 .footer__text {
   line-height: 1.45;
@@ -1354,13 +1395,23 @@ select {
   margin-bottom: 1.875rem;
 }
 .banner__title {
-  font-size: 3.75rem;
+  font-size: 1.875rem;
   font-family: "Figtree", sans-serif;
   font-weight: 700;
   line-height: 0.9;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
+}
+@media (min-width: 576px) {
+  .banner__title {
+    font-size: 3.125rem;
+  }
 }
 @media (min-width: 768px) {
+  .banner__title {
+    font-size: 3.75rem;
+  }
+}
+@media (min-width: 992px) {
   .banner__title {
     font-size: 5rem;
   }
@@ -1371,10 +1422,15 @@ select {
   }
 }
 .banner__sub-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 1.875rem;
+}
+@media (min-width: 768px) {
+  .banner__sub-title {
+    font-size: 1.25rem;
+  }
 }
 @media (min-width: 992px) {
   .banner__sub-title {
@@ -1532,10 +1588,15 @@ select {
   z-index: -1;
 }
 .priority__title {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   font-family: "Figtree", sans-serif;
   line-height: 1;
+}
+@media (min-width: 576px) {
+  .priority__title {
+    font-size: 2.5rem;
+  }
 }
 @media (min-width: 768px) {
   .priority__title {
